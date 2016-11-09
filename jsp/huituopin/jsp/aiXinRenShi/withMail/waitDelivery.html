@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的获助</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../css/mui.css">
+		<script src="../../../js/footer.js"></script>
+		<link rel="stylesheet" href="../../../css/footer.css">
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}		
+
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: white;
+				
+			}			
+			.button{
+				float: right;
+				height: 30px;
+				width:45px;
+				margin-top: 12px;
+				border: 1px solid darkgray;
+				color: #6C6C6C;
+			}
+			.mui-table-view li{
+				height: 92px;
+				padding-top: 16px;
+				border-bottom: 1px solid #CFCFCF;
+				border-top: 1px solid #CFCFCF;
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			.pingjiabtn{
+				float: right;
+				height: 30px;
+				width:50px;
+				margin-top: 12px;
+				background-color: #fc5959;
+				color: white;
+				border: 0;
+				padding:5px 0 0 10px;
+			}
+			.shanchubtn{
+				float: right;
+				height: 30px;
+				width:75px;
+				margin-top: 12px;
+				margin-right: 10px;
+				color: gray;
+				border: 1px solid #CFCFCF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-slider">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							待发货							
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							待收货					
+						</a>	
+						<a class="mui-control-item" href="#item3mobile">
+							已完成					
+						</a>	
+					</div>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar" style="width: 33.3%;padding-left:10%;padding-right: 10%;transform: translate3d(50px, 0px, 0px) translateZ(0px);"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div style="height: 10px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">		
+										<li class="mui-table-view-cell" style="height: 40px;padding-top: 16px;margin-right:-10px;border-bottom: 0;">			
+											<div class="mui-media-body" style="margin-top: -10px;">
+												<div style="float: left;height: 60px;width:100%;font-size: 12px;color: gray;">
+													<div style="padding-top: 5px;float: left;">领取时间：2016-04-27 10:25</div> 
+													<button id="btn1" style="float: right;height: 30px;width:50px;background-color: #fc5959;border: 0;color: white;">发货</button>
+													<button style="float: right;height: 30px;width:50px;margin-right: 10px;border:1px solid cornflowerblue;color:cornflowerblue  ;">详情</button>
+												</div>																						
+											</div>									
+										</li>
+										<li class="mui-table-view-cell" style="height: 85px;padding-top: 16px;">
+											<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+											<div class="mui-media-body" style="">
+												<div style="float: left;height: 60px;width: 60px;">
+													牛仔裤
+													<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+													数量：1							
+												</div>														
+											</div>									
+										</li>
+									</ul>
+									<div style="height: 10px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">		
+										<li class="mui-table-view-cell" style="height: 40px;padding-top: 16px;margin-right:-10px;border-bottom: 0;">			
+											<div class="mui-media-body" style="margin-top: -10px;">
+												<div style="float: left;height: 60px;width:100%;font-size: 12px;color: gray;">
+													<div style="padding-top: 5px;float: left;">领取时间：2016-04-27 10:25</div> 
+													<button id="btn1" style="float: right;height: 30px;width:50px;background-color: #fc5959;border: 0;color: white;">发货</button>
+													<button style="float: right;height: 30px;width:50px;margin-right: 10px;border:1px solid cornflowerblue;color:cornflowerblue  ;">详情</button>
+												</div>																						
+											</div>									
+										</li>
+										<li class="mui-table-view-cell" style="height: 85px;padding-top: 16px;">
+											<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+											<div class="mui-media-body" style="">
+												<div style="float: left;height: 60px;width: 60px;">
+													牛仔裤
+													<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+													数量：1							
+												</div>														
+											</div>									
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="item2mobile" class="mui-slider-item mui-control-content">
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<div style="height: 10px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">		
+										<li class="mui-table-view-cell" style="height: 40px;padding-top: 16px;margin-right:-10px;border-bottom: 0;">			
+											<div class="mui-media-body" style="margin-top: -10px;">
+												<div style="float: left;height: 60px;width:100%;font-size: 12px;color: gray;">
+													<div style="padding-top: 5px;float: left;">领取时间：2016-04-27 10:25</div> 
+													<button id="btn1" style="float: right;height: 30px;width:65px;background-color: #fc5959;border: 0;color: white;">待收货</button>
+													<button style="float: right;height: 30px;width:50px;margin-right: 10px;border:1px solid cornflowerblue;color:cornflowerblue  ;">详情</button>
+												</div>																						
+											</div>									
+										</li>
+										<li class="mui-table-view-cell" style="height: 85px;padding-top: 16px;">
+											<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+											<div class="mui-media-body" style="">
+												<div style="float: left;height: 60px;width: 60px;">
+													牛仔裤
+													<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+													数量：1							
+												</div>														
+											</div>									
+										</li>
+									</ul>
+									<div style="height: 10px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">		
+										<li class="mui-table-view-cell" style="height: 40px;padding-top: 16px;margin-right:-10px;border-bottom: 0;">			
+											<div class="mui-media-body" style="margin-top: -10px;">
+												<div style="float: left;height: 60px;width:100%;font-size: 12px;color: gray;">
+													<div style="padding-top: 5px;float: left;">领取时间：2016-04-27 10:25</div> 
+													<button id="btn1" style="float: right;height: 30px;width:65px;background-color: #fc5959;border: 0;color: white;">待收货</button>
+													<button style="float: right;height: 30px;width:50px;margin-right: 10px;border:1px solid cornflowerblue;color:cornflowerblue  ;">详情</button>
+												</div>																						
+											</div>									
+										</li>
+										<li class="mui-table-view-cell" style="height: 85px;padding-top: 16px;">
+											<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+											<div class="mui-media-body" style="">
+												<div style="float: left;height: 60px;width: 60px;">
+													牛仔裤
+													<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+													数量：1							
+												</div>														
+											</div>									
+										</li>
+									</ul>
+									<div style="height: 10px;background-color: #efeff4;"></div>		
+								</div>
+							</div>
+						</div>
+						<div id="item3mobile" class="mui-slider-item mui-control-content">
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<div style="height: 10px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">		
+										<li class="mui-table-view-cell" style="height: 40px;padding-top: 16px;margin-right:-10px;border-bottom: 0;">			
+											<div class="mui-media-body" style="margin-top: -10px;">
+												<div style="float: left;height: 60px;width:100%;font-size: 12px;color: gray;">
+													<div style="padding-top: 5px;float: left;">领取时间：2016-04-27 10:25</div> 
+													<button id="btn1" style="float: right;height: 30px;width:80px;background-color: #fc5959;border: 0;color: white;">查看评价</button>
+													<button style="float: right;height: 30px;width:50px;margin-right: 10px;border:1px solid cornflowerblue;color:cornflowerblue  ;">详情</button>
+												</div>																						
+											</div>									
+										</li>
+										<li class="mui-table-view-cell" style="height: 85px;padding-top: 16px;">
+											<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+											<div class="mui-media-body" style="">
+												<div style="float: left;height: 60px;width: 60px;">
+													牛仔裤
+													<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+													数量：1							
+												</div>														
+											</div>									
+										</li>
+									</ul>
+									<div style="height: 10px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">		
+										<li class="mui-table-view-cell" style="height: 40px;padding-top: 16px;margin-right:-10px;border-bottom: 0;">			
+											<div class="mui-media-body" style="margin-top: -10px;">
+												<div style="float: left;height: 60px;width:100%;font-size: 12px;color: gray;">
+													<div style="padding-top: 5px;float: left;">领取时间：2016-04-27 10:25</div> 
+													<button id="btn1" style="float: right;height: 30px;width:80px;background-color: #fc5959;border: 0;color: white;">查看评价</button>
+													<button style="float: right;height: 30px;width:50px;margin-right: 10px;border:1px solid cornflowerblue;color:cornflowerblue  ;">详情</button>
+												</div>																						
+											</div>									
+										</li>
+										<li class="mui-table-view-cell" style="height: 85px;padding-top: 16px;">
+											<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+											<div class="mui-media-body" style="">
+												<div style="float: left;height: 60px;width: 60px;">
+													牛仔裤
+													<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+													数量：1							
+												</div>														
+											</div>									
+										</li>
+									</ul>
+									<div style="height: 10px;background-color: #efeff4;"></div>		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="#tabbar" id="home">
+				<div class="footericon" style="height: 20px;"><img id="img1" src="../../../img/light1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">慧脱贫</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="#tabbar-with-contact"id="me" >
+				<div class="footericon"><img id="img2" src="../../../img/me1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">我</div>
+			</a>
+		</nav>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/mui.pullToRefresh.js"></script>
+		<script src="../../../js/mui.pullToRefresh.material.js"></script>
+		<script>
+			document.getElementById("home").addEventListener("click",onchangeinnest);
+			document.getElementById("me").addEventListener("click",onchangeinnest1);
+			//document.getElementById("item1").addEventListener("click",onclick);
+			//document.getElementById("item2").addEventListener("click",onclick1);
+		</script>
+	</body>
+</html>

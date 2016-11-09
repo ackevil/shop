@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>支付订单</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../../js/mui.min.js"></script>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui1.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../css/app.css" />
+		<style>
+			.login-lastline{
+				height:80px;
+				width:100%;
+				background-color: #efeff4;
+				padding-top: 20px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.login-button{
+				width:100%;
+				height:45px;
+				outline: none;
+				font-size: 14px;
+				color: white;
+				border-color: transparent;
+				background-color:  #fc5959;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" >
+<a class="mui-action-back mui-pull-left" style="background-image: url(../../img/jiantou.png);background-size:70%;background-repeat:no-repeat ;height: 40px;width:30px;margin-top: 13px;margin-left: 4px;"></a>			<h1 class="mui-title">待付款的订单</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view"style="height: 98px;border-top: 1px solid #CFCFCF;">
+				<li class="mui-table-view-cell">
+					<a id="head" class="mui-navigate-right" href="">收件人：张三
+						<span  style="margin-left:10px ;">
+						15200891322
+						</span>
+						<div style="padding-right: 25px;">
+							<span style="font-size: 14px;white-space :normal;line-height: 0.5em;">收货地址：湖南省长沙市岳麓区中南大学本校区升华公寓
+						</span>
+						</div>
+					</a>
+			</ul>
+			<div style="height: 10px;"></div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell" style="height:38px;padding-top: 9px;">
+					<a id="head" style="font-size: 13px;">店铺：美味家园
+					</a>
+				</li>
+				<li class="mui-table-view-cell" style="height:77px;padding-top: 9px;">
+					<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../img/food2.jpg">
+						<div class="mui-media-body" style="width: 190px;font-size: 13px;letter-spacing: -2px;float: left;">
+							多鲜 牛奶蛋羹味夹心三明治吐司口袋面包蒸蛋糕早餐零食整箱750克
+							<p class='mui-ellipsis' style="letter-spacing: 0px;font-size: 12px;">750克*1箱</p>
+						</div>
+						<div class="mui-pull-right" >
+							¥36.80<br/>
+							<span class="mui-pull-right">x1</span>
+						</div>
+						
+				</li>
+				<li class="mui-table-view-cell" style="height:38px;padding-top: 9px;">
+					<a id="head" style="font-size: 13px;">运费
+						<span class="mui-pull-right">¥0.00</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" style="height:38px;padding-top: 9px;">
+					<a id="head" style="font-size: 13px;">合计
+						<span class="mui-pull-right" style="color: #fc5959;">¥36.80</span>
+					</a>
+				</li>
+			</ul>
+			<div style="height: 15px;"></div>
+			<ul class="mui-table-view"style="height: 62px;">
+				<li class="mui-table-view-cell">
+					<a id="head" href="" style="text-align: center;color:#fc5959 ;padding-top: 14px;font-size: 15px;">需付:¥36.80
+					</a>
+			</ul>
+			<div class="login-lastline">
+					<input type="submit" class="login-button" value="微信支付" />
+			</div>		
+	</body>
+</html>

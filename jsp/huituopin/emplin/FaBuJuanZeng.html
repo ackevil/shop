@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../js/mui.min.js"></script>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui1.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/FaBuJuanZeng.css" />
+		<style>
+			.login-lastline {
+				height: 80px;
+				width: 100%;
+				background-color: #efeff4;
+				padding-top: 20px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			
+			.login-button {
+				width: 100%;
+				height: 45px;
+				outline: none;
+				font-size: 14px;
+				color: white;
+				border-color: transparent;
+				background-color: #fc5959;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+
+			<!--<div style="height: 10px;"></div>-->
+			<div class="mui-table-view">
+				<div class="mui-table-view-cell product">
+					<span>产品名称</span>
+					<input placeholder="小脚牛仔裤" />
+				</div>
+				<div class="mui-table-view-cell product">
+					<span>所属类别</span>
+					<span class="mui-navigate-right">裤子</span>
+				</div>
+			</div>
+			<div style="height: 15px;"></div>
+			<div class="product-count">
+				<span>数量</span>
+				<div class="mui-content-padded">
+				<ul class="mui-pagination mui-pagination-sm">
+						<li class="mui-previous"><a href="#">-</a></li>
+						<li><a href="#">1</a></li>
+						<li class="mui-next"><a href="#">+</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div style="height: 15px;"></div>
+			
+			<div class="product-detail">
+				<div class="product-detail-title">
+					<span>捐赠寄语</span>
+				</div>
+				<div class="mui-input-row product-detail-content">
+					<textarea id="textarea" rows="3" 
+						placeholder="例：小小心意，希望能帮助到他人，物品有限，爱心无限。"></textarea>
+				</div>
+				<div class="product-detail-img">
+					<img src="img/tupian.jpg"/>
+					<img src="img/addImg.jpg"/>
+					<img src="img/addImg.jpg"/>
+					<img src="img/addImg.jpg"/>
+				</div>
+			</div>
+			
+			<div class="login-lastline">
+				<input type="submit" class="login-button" value="确定" />
+			</div>
+		</div>
+	</body>
+
+</html>

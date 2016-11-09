@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+		<script src="../js/footer.js"></script>
+	</head>
+	<body>	
+		<div class="mui-content">
+			<div id="tabbar" class="mui-control-content mui-active">
+				<div class="headimage">
+					<img src="../img/Main_page.jpg" style="height: 100%;width: 100%;"/>
+				</div>
+				<div class="mui-content">
+			        <ul class="mui-table-view mui-grid-view mui-grid-9" style="margin-top: 0px;">
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" style="height:110px;border-right: 1px solid #CFCFCF;border-bottom: 1px solid #CFCFCF;background-color: #FFFFFF;"><a href="yiJiuYouAi/yijiuyouai.html">
+			                <div class="icondiv"><img src="../img/yijiuyouai_logo.png" class="iconimg"/></div>
+			                <div class="mui-media-body" style="padding-top: 6px;height: 24px;font-size: 14px;">衣旧有爱</div></a>
+			            </li>
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" style="height:110px;border-right: 1px solid #CFCFCF;border-bottom: 1px solid #CFCFCF;background-color: #FFFFFF;"><a href="diShuiZhiEn/dishui.html">
+			                <div class="icondiv"><img src="../img/dishuizhien.png" class="iconimg"/></div>
+			                <div class="mui-media-body" style="padding-top: 6px;height: 24px;font-size: 14px;">滴水之恩</div></a>
+			            </li>
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" style="height:110px;border-bottom: 1px solid #CFCFCF;background-color:#FFFFFF;"><a href="zhongDaJiuZhu/signficant.html">
+			                <div class="icondiv"><img src="../img/zhongdajiuzhu_log.png" class="iconimg"/></div>
+			                <div class="mui-media-body" style="padding-top: 6px;height: 24px;font-size: 14px;">重大救助</div></a>
+			            </li>
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" style="height:110px;border-right: 1px solid #CFCFCF;border-bottom: 1px solid #CFCFCF;background-color:#FFFFFF;"><a href="aiGou/aiGou.html">
+			                <div class="icondiv"><img src="../img/aigou_log.png" class="iconimg"/></div>
+			                <div class="mui-media-body" style="padding-top: 6px;height: 24px;font-size: 14px;">爱购</div></a>
+			            </li>
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" style="height:110px;border-right: 1px solid #CFCFCF;border-bottom: 1px solid #CFCFCF;background-color: #FFFFFF;"><a href="#">
+			                <div class="icondiv"><img src="../img/zhongchoukongjian.png" class="iconimg"/></div>
+			                <div class="mui-media-body" style="padding-top: 6px;height: 24px;font-size: 14px;">众筹空间</div></a>
+			            </li>
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" style="height:110px;border-bottom: 1px solid #CFCFCF;background-color: #FFFFFF;"><a href="#">
+			                <div class="icondiv"><img src="../img/aixinfengcai_log.png" class="iconimg"/></div>
+			                <div class="mui-media-body" style="padding-top: 6px;height: 24px;font-size: 14px;">爱心风采</div></a>
+			            </li>
+			        </ul> 
+				</div>
+			</div>
+			
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar" id="home">
+				<div class="footericon" style="height: 20px;"><img id="img1" src="../img/light.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">慧脱贫</div>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact"id="me" >
+				<div class="footericon"><img id="img2" src="../img/me.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">我</div>
+			</a>
+		</nav>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});	
+		document.getElementById("home").addEventListener("click",onchange);
+		document.getElementById("me").addEventListener("click",onchange1);
+	</script>
+</html>

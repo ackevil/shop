@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>爱购</title>
+		<link rel="stylesheet" href="../../../css/aiGou.css" /> 
+		<link rel="stylesheet" href="../../../css/mui1.css"  />
+		<link rel="stylesheet" type="text/css" href="../../../css/footer.css"/>
+		<script src="../../../js/mui.min.js"></script>
+		<style type="text/css">
+			.login-lastline{
+				height:100px;
+				width:100%;
+				background-color: #efeff4;
+				padding-top: 20px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+				.login-button{
+				width:100%;
+				height:50%;
+				outline: none;
+				font-size: 14px;
+				color: white;
+			}
+			input[type='submit']{
+				background-color: #fc5959;
+				border: 0;
+			}
+			.mui-input-group .mui-input-row{
+				height: 50px;
+			}
+			.mui-input-row label{
+				padding-top:30px;
+				color: black;
+				font-size: 14px;
+				width: 28%;
+			}
+			.mui-input-row label ~ input{
+				margin-top: 2px;
+				font-size: 15px;
+			}
+			.mui-table-view:before{
+				background-color: transparent;
+			}
+			
+			#info {
+				padding: 20px 10px;
+				}
+			.mui-popup{
+				top:40%;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" >
+			<a class="mui-action-back mui-pull-left" style="background-image: url(../../../img/jiantou.png);background-size:70%;background-repeat:no-repeat ;height: 40px;width:30px;margin-top: 13px;margin-left: 4px;"></a>
+			<h1 class="mui-title">快递信息</h1>
+		</header>
+		<div class="mui-content">
+			<div style="height: 10px;"></div>
+			<form class="mui-input-group" action="choose.html">
+				<div class="mui-input-row">
+					<label class="mui-navigate-right"style="padding-top: 18px;">选择快递</label>
+				</div>
+				<div class="mui-input-row" style="height: 80px;">
+					<label>运单号码</label>
+					<div style="width: 72%;height: 100%;float:right;padding-right: 15px;padding-top: 20px;">
+						<input type="text" style="border: 1px solid #CFCFCF;padding-right: 10px;"/>
+					</div>		
+				</div>				
+			</form>
+			<div class="login-lastline">
+				<input id="alertBtn" type="submit" class="login-button" value="确定" />
+			</div>			
+		</div>
+	
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="../home.html" id="home">
+				<div class="footericon" style="height: 20px;"><img id="img1" src="../../../img/light1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">慧脱贫</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="#tabbar-with-contact"id="me" >
+				<div class="footericon"><img id="img2" src="../../../img/me1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">我</div>
+			</a>
+		</nav>
+		<script type="text/javascript" charset="utf-8">
+			//mui初始化
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			var info = document.getElementById("info");
+			document.getElementById("alertBtn").addEventListener('tap', function() {
+				var btnArray = ["发货成功"];
+				mui.alert('', ' ',btnArray, function() {
+					
+				});
+			});
+			</script>
+	</body>
+</html>

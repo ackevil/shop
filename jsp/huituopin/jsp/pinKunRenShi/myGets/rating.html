@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>评价</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script type="text/javascript" src="../../../js/footer.js"></script>
+		<script src="../../../js/mui.min.js"></script>
+		<link rel="stylesheet" href="../../../css/mui1.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/footer.css"/>
+		<style type="text/css">
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			.pingjiaBtn{
+				height: 28px;
+				width: 75px;
+				background-color: #fc5959;
+				margin-top: 10px;
+				color: white;
+				border: 0;
+				float:right;
+				margin-right: 10px;
+				font-size: 13px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="mui-table-view">									
+			<li class="mui-table-view-cell" style="height: 205px;padding-top: 16px;">
+				<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+				<div class="mui-media-body" style="">												
+					<div class="mui-input-row" style="margin-top:-10px;margin-left: -15px;">
+						<textarea id="textarea" rows="5" placeholder="请输入评价..." style="font-size: 12px;border: 0;"></textarea>
+					</div>
+				</div>
+				<div style="height: 30px;width: 100px;margin: 0 auto;padding-top: 5px;">
+					<img src="../../../img/shaitu.png"style="max-width: 100px;height: 25px;width: 100%;">
+				</div>
+			</li>
+		</ul>
+		<div style="height: 40px;width: 100%;">
+			<div style="width: 120px;height:100%;float: left;">
+				<img style="padding-top: 10px;max-width: 20px;margin-left: 5px;float: left;" src="../../../images/correct.png"/>
+				<div style="font-size: 12px;height:40px;width:80px;padding-top: 10px;">匿名评价</div>
+			</div>
+			<div style="width: 100px;height:100%;float: right;">
+				<button class="pingjiaBtn">发表评价</button>
+			</div>
+		</div>		
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="#tabbar" id="home">
+				<div class="footericon" style="height: 20px;"><img id="img1" src="../../../img/light1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">慧脱贫</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="#tabbar-with-contact"id="me" >
+				<div class="footericon"><img id="img2" src="../../../img/me1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">我</div>
+			</a>
+		</nav>
+		<script>
+			document.getElementById("home").addEventListener("click",onchangeinnest);
+			document.getElementById("me").addEventListener("click",onchangeinnest1);
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+	font-size:100%;
+	}
+#content{
+	width:100%;
+	height:100%;
+	}
+#top{
+	width:100%;
+	height:30%;
+	background-color:#f6f6f6;
+	padding-top:3vh;
+	padding-bottom:2vh;
+	}
+.top_img{
+	width:40%;
+	height:100%;
+	float:left;
+	margin-left:4vw;
+	}
+.title_img{
+	width:11%;
+	max-width:60%;
+	max-height:60%;
+	}
+.top_h1{
+	width:60%;
+	height:100%;
+	display:inline;
+	}
+.title_h1{
+	font-size:5vw;
+	font-family:"黑体";
+	display:inline;
+	margin:0px;
+	}
+#center{
+	width:100%;
+	height:70%;
+	}
+

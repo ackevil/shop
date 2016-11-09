@@ -1,0 +1,16 @@
+.mui-table-view-cell{
+	height:100%;
+}
+
+
+.mui-media-body{
+	width: 76%;
+	font-size: 13px;
+}
+.mui-media-body-title{
+	color:#353535 ;
+}
+.mui-media-body img{
+	width: 60px;
+	height: 60px;
+}

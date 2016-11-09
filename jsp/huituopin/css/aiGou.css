@@ -1,0 +1,29 @@
+.aiGou-choose{
+	top:44px ;
+	height: 44px;
+	width:100%;
+	position: fixed;  
+    padding: 0px;
+    border-bottom: 1px solid gainsboro;
+    background-color: #f7f7f7
+}
+.aiGou-left{
+	height: 100%;
+	width: 33%;
+	margin: 0px;
+	border-right: 1px solid gainsboro ;
+	float: left;
+}
+.aiGou-middle{
+	height: 100%;
+	width: 34%;
+	margin: 0px;
+	border-right: 1px solid gainsboro ;
+	float: left;
+}
+.aiGou-right{
+	height: 100%;
+	width: 33%;
+	margin: 0px;
+	float: left;
+}

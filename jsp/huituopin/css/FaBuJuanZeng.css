@@ -1,0 +1,163 @@
+
+.mui-table-view::before{
+	background-color:#FFFFFF
+}
+.mui-table-view::after{
+	background-color:#FFFFFF
+}
+
+.product{
+	height: 43px;
+	width: 100%;
+	padding-left: 15px;
+	padding-top: 0px;
+	line-height: 43px;
+}
+.mui-table-view-cell span:first-child{
+	color:#666666;
+	font-size: 15px;
+}
+.product input{
+	border: none;
+	color:#121212;
+	font-size: 16px;
+}
+
+.mui-navigate-right{
+	color: #121212;
+}
+/*----------------------*/
+.product-count{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 63px;
+	border-bottom: 1px solid #CFCFCF;
+	border-top: 1px solid #CFCFCF;
+}
+.product-count span{
+	padding-left: 15px;
+	line-height: 60px;
+	color:#4A4A4A;
+	font-size: 15px;
+}
+
+.mui-content-padded{
+	float: right;
+	line-height: 60px;
+	padding-right: 15px;
+}
+
+.mui-pagination > li > a, 
+.mui-pagination > li > span{
+	color: #666666;
+}
+.mui-pagination-sm > li > a,
+.mui-pagination-sm > li > span{
+	padding: 6px 14px;
+}
+.mui-pagination > 
+li:first-child > a, 
+.mui-pagination > 
+li:first-child > span{
+	border-bottom-left-radius:0px;
+	border-top-left-radius:0px;
+}
+
+.mui-pagination > 
+li:last-child > a, 
+.mui-pagination > 
+li:last-child > span{
+	border-bottom-right-radius:0px;
+	border-top-right-radius:0px;
+	
+}
+/*------------product-detail--------------*/
+.product-detail{
+	height: 210px;
+	background-color: #FFFFFF;
+	border-top:1px solid #CFCFCF ;
+	border-bottom: 1px solid #CFCFCF;
+}
+.product-detail-title{
+	height: 30px;
+	color: #5F5F5F;
+	padding-top: 15px;
+	padding-left: 15px;
+	/*background-color: #6641E2;*/
+}
+.product-detail-title span{
+	font-size: 15px;
+}
+.product-detail-content textarea{
+	
+	height: 100px;
+	font-size: 13px;
+	padding:8px 15px;
+	border: 0;
+	margin-bottom: 0px;
+}
+.product-detail-img{
+	padding-left: 15px;
+	margin-top: 3px;
+}
+.product-detail-img img{
+	width: 70px;
+	height: 70px;
+}
+.login-lastline 
+{
+	height: 70px;
+	width: 100%;
+	background-color: #efeff4;
+	padding-top: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.login-button
+{
+	width: 100%;
+	height: 43px;
+	outline: none;
+	font-size: 14px;
+	color: white;
+	border-color: transparent;
+	background-color: #fc5959;
+}
+.login-lastline input
+{
+	background-color:#FC5959;
+	color: #FFFFFF;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../js/mui.min.js"></script>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui1.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/userJiFen.css" />
+		
+		<style>
+			.headimage {
+				height: 180px;
+				width: 100%;
+			}
+			
+			.icondiv {
+				height: 30px;
+				width: 30px;
+				margin: 0 auto;
+			}
+			
+			.iconimg {
+				max-height: 35px;
+				max-width: 35px;
+				padding-top: 5px;
+			}
+			
+			.footer {
+				height: 30px;
+				width: 15px;
+				margin: 0 auto;
+				padding-top: 10px;
+			}
+			
+			.footerimg {
+				max-height: 15px;
+				max-width: 15px;
+				padding-top: 10px;
+			}
+			
+			.login-lastline {
+				height: 80px;
+				width: 100%;
+				background-color: #efeff4;
+				padding-top: 20px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			
+			.login-button {
+				width: 100%;
+				height: 45px;
+				outline: none;
+				font-size: 14px;
+				color: white;
+				border-color: transparent;
+				background-color: #fc5959;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar" id="home">
+				<div class="icondiv"><img id="img1" src="img/light1.png" class="footer" /></div>
+				<span class="mui-tab-label" style="font-size: 12px;">慧脱贫</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact" id="me">
+				<div class="icondiv"><img id="img2" src="img/me1.png" class="footer" /></div>
+				<span class="mui-tab-label" style="font-size: 12px;">我</span>
+			</a>
+		</nav>
+		
+		
+		<div class="mui-content" style="padding-bottom: 0px;">
+			<div class="mui-table-view" style="height: 150px; background-color: #4A90E2;padding-top: 10px;">
+				<div class="JiFenContent">
+					<div class="JiFenContent-div iFenContent-div-top">
+						<span>当前积分</span>
+						<button>兑换记录</button>
+					</div>
+					<div class="JiFenContent-div JiFenContent-div-middle" >
+						<span>998</span>
+						<p>分</p>
+					</div>
+					<div class="JiFenContent-div JiFenContent-div-buttom" >
+						<button>积分兑换商品</button>
+					</div>
+				</div>
+			</div>
+			<div class="recent">
+				<span>最近30天积分</span>
+			</div>
+			<div class="recent-content" >
+				<span>最近30天无积分记录</span>
+			</div>
+	    </div>
+	</body>
+
+</html>

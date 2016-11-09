@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的获助</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../css/mui.css">
+		<script src="../../../js/footer.js"></script>
+		<link rel="stylesheet" href="../../../css/footer.css">
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}
+			.mui-pull-top-tips {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				margin-left: -25px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				z-index: 1;
+			}
+			.mui-bar~.mui-pull-top-tips {
+				top: 24px;
+			}
+			.mui-pull-top-wrapper {
+				width: 42px;
+				height: 42px;
+				display: block;
+				text-align: center;
+				background-color: #efeff4;
+				border: 1px solid #ddd;
+				border-radius: 25px;
+				background-clip: padding-box;
+				box-shadow: 0 4px 10px #bbb;
+				overflow: hidden;
+			}
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+			.mui-pull-top-tips .mui-pull-loading {
+				/*-webkit-backface-visibility: hidden;
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;*/
+				
+				margin: 0;
+			}
+			.mui-pull-top-wrapper .mui-icon,
+			.mui-pull-top-wrapper .mui-spinner {
+				margin-top: 7px;
+			}
+			.mui-pull-top-wrapper .mui-icon.mui-reverse {
+				/*-webkit-transform: rotate(180deg) translateZ(0);*/
+			}
+			.mui-pull-bottom-tips {
+				text-align: center;
+				background-color: #efeff4;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+			.mui-pull-top-canvas {
+				overflow: hidden;
+				background-color: #fafafa;
+				border-radius: 40px;
+				box-shadow: 0 4px 10px #bbb;
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			.mui-pull-top-canvas canvas {
+				width: 40px;
+			}
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: white;
+				
+			}			
+			.button{
+				float: right;
+				height: 30px;
+				width:45px;
+				margin-top: 12px;
+				border: 1px solid darkgray;
+				color: #6C6C6C;
+			}
+			.mui-table-view li{
+				height: 92px;
+				padding-top: 16px;
+				border-bottom: 1px solid #CFCFCF;
+				border-top: 1px solid #CFCFCF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-slider">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							获助的物品
+							
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							获助的金额
+							
+						</a>				
+					</div>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar" style="width: 50%;padding-left:10%;padding-right: 10%;transform: translate3d(50px, 0px, 0px) translateZ(0px);"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div style="height: 8px;background-color: #efeff4;"></div>
+								<ul class="mui-table-view">									
+									<li class="mui-table-view-cell" >
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+										<div class="mui-media-body" style="">
+											<div style="float: left;height: 60px;width: 60px;">
+												牛仔裤
+												<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+												数量：1<br />
+												2016-04-27
+											</div>								
+											<button class="button">删除</button>
+										</div>									
+									</li>
+								</ul>								
+								<div style="height: 8px;background-color: #efeff4;"></div>
+								<ul class="mui-table-view">				
+									<li class="mui-table-view-cell" >
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+										<div class="mui-media-body" style="">
+											<div style="float: left;height: 60px;width: 60px;">
+												牛仔裤
+												<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+												数量：1<br />
+												2016-04-27
+											</div>								
+											<button class="button">删除</button>
+										</div>									
+									</li>
+								</ul>
+									<div style="height: 8px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">				
+									<li class="mui-table-view-cell" >
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+										<div class="mui-media-body" style="">
+											<div style="float: left;height: 60px;width: 60px;">
+												牛仔裤
+												<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+												数量：1<br />
+												2016-04-27
+											</div>								
+											<button class="button">删除</button>
+										</div>									
+									</li>
+								</ul>
+									<div style="height: 8px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">				
+									<li class="mui-table-view-cell">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+										<div class="mui-media-body" style="">
+											<div style="float: left;height: 60px;width: 60px;">
+												牛仔裤
+												<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+												数量：1<br />
+												2016-04-27
+											</div>								
+											<button class="button">删除</button>
+										</div>									
+									</li>
+								</ul>
+									<div style="height: 8px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">				
+									<li class="mui-table-view-cell">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+										<div class="mui-media-body" style="">
+											<div style="float: left;height: 60px;width: 60px;">
+												牛仔裤
+												<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+												数量：1<br />
+												2016-04-27
+											</div>								
+											<button class="button">删除</button>
+										</div>									
+									</li>
+								</ul>
+									<div style="height: 8px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">				
+									<li class="mui-table-view-cell">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+										<div class="mui-media-body" style="">
+											<div style="float: left;height: 60px;width: 60px;">
+												牛仔裤
+												<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+												数量：1<br />
+												2016-04-27
+											</div>								
+											<button class="button">删除</button>
+										</div>									
+									</li>
+								</ul>
+									<div style="height: 8px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">				
+									<li class="mui-table-view-cell">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+										<div class="mui-media-body" style="">
+											<div style="float: left;height: 60px;width: 60px;">
+												牛仔裤
+												<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+												数量：1<br />
+												2016-04-27
+											</div>								
+											<button class="button">删除</button>
+										</div>									
+									</li>
+								</ul>
+									<div style="height: 8px;background-color: #efeff4;"></div>
+									<ul class="mui-table-view">				
+									<li class="mui-table-view-cell">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+										<div class="mui-media-body" style="">
+											<div style="float: left;height: 60px;width: 60px;">
+												牛仔裤
+												<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+												数量：1<br />
+												2016-04-27
+											</div>								
+											<button class="button">删除</button>
+										</div>									
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+				<div style="height: 10px;background-color: #efeff4;"></div>
+				<li class="mui-table-view-cell" style="height: 145px;">
+					<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/dishuizhien1.jpg" style="width:100%;height: 115px;max-width: 160px;">
+					<div class="mui-media-body" style="font-size: 12px;line-height:1.5;height: 80px;color: #262626;">
+						灵魂洗涤淳净未来——为菩提增长小学的孩子建一间澡堂<br/>
+						<span style="color:#fc5959;line-height: 3.2;">
+							获捐金额：¥50
+						</span><br/>
+						
+						
+					</div>
+					<div class="mui-media-body" style="font-size: 12px;line-height:1.5;">
+						<span style="float: left;height: 30px;width:80px;padding-top: 12px;color: gray;">2016-04-10</span>
+						<button style="float: right;height: 30px;width:45px;color: gray;border: 1px solid darkgray">删除</button>
+					</div>
+				</li>
+				<div style="height: 10px;background-color: #efeff4;"></div>
+				<li class="mui-table-view-cell" style="height: 145px;">
+					<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/dishuizhien1.jpg" style="width:100%;height: 115px;max-width: 160px;">
+					<div class="mui-media-body" style="font-size: 12px;line-height:1.5;height: 80px;color: #262626">
+						灵魂洗涤淳净未来——为菩提增长小学的孩子建一间澡堂<br/>
+						<span style="color:#fc5959;line-height: 3.2;">
+							获捐金额：¥50
+						</span><br/>
+						
+						
+					</div>
+					<div class="mui-media-body" style="font-size: 12px;line-height:1.5;">
+						<span style="float: left;height: 30px;width:80px;padding-top: 12px;color: gray;">2016-04-10</span>
+						<button style="float: right;height: 30px;width:45px;color: gray;border: 1px solid darkgray">删除</button>
+					</div>
+				</li>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="#tabbar" id="home">
+				<div class="footericon" style="height: 20px;"><img id="img1" src="../../../img/light1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">慧脱贫</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="#tabbar-with-contact"id="me" >
+				<div class="footericon"><img id="img2" src="../../../img/me1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">我</div>
+			</a>
+		</nav>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/mui.pullToRefresh.js"></script>
+		<script src="../../../js/mui.pullToRefresh.material.js"></script>
+		<script>
+			mui.init();
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration:deceleration
+				});
+				$.ready(function() {
+					//循环初始化所有下拉刷新，上拉加载。
+					$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+						$(pullRefreshEl).pullToRefresh({
+							down: {
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view');
+										ul.insertBefore(createFragment(ul, index, 10, true), ul.firstChild);
+										self.endPullDownToRefresh();
+									}, 1000);
+								}
+							},
+							up: {
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view');
+										ul.appendChild(createFragment(ul, index, 5));
+										self.endPullUpToRefresh();
+									}, 1000);
+								}
+							}
+						});
+					});
+					var createFragment = function(ul, index, count, reverse) {
+						var length = ul.querySelectorAll('li').length;
+						var fragment = document.createDocumentFragment();
+						var li;
+						for (var i = 0; i < count; i++) {
+							li = document.createElement('li');
+							li.className = 'mui-table-view-cell';
+							li.innerHTML = '第' + (index + 1) + '个选项卡子项-' + (length + (reverse ? (count - i) : (i + 1)));
+							fragment.appendChild(li);
+						}
+						return fragment;
+					};
+				});
+			})(mui);
+			document.getElementById("home").addEventListener("click",onchangeinnest);
+			document.getElementById("me").addEventListener("click",onchangeinnest1);
+			//document.getElementById("item1").addEventListener("click",onclick);
+			//document.getElementById("item2").addEventListener("click",onclick1);
+		</script>
+	</body>
+
+</html>

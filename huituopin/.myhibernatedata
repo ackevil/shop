@@ -1,0 +1,24 @@
+#MyEclipse Hibernate Properties
+#Wed Jun 08 11:37:06 CST 2016
+sessionFactoryName=com.huituopin.HibernateSessionFactory
+genBasicCompId=true
+profile=
+daoSFId=
+version=3.3
+jndiPath=
+detectM2M=true
+reStrategyClass=
+detectO2O=true
+springDaoFile=
+useJavaTypes=false
+keyGenerator=
+libInstallFolder=WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=true
+reSettingsFile=
+configFile=/huituopin/src/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=true

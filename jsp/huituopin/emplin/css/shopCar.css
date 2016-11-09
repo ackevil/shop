@@ -1,0 +1,132 @@
+*{
+	font-family: "黑体";
+}
+.shop-car-items{
+	width: 100%;
+	height: 95px;
+	background-color: white;
+}
+
+.shop-car-items-check{
+	float: left;
+	width: 12%;
+	height: 100%;
+	line-height: 110px;
+	text-align: center;
+}
+.shop-car-items-check img{
+	width:27px;
+	height: 27px;
+}
+.shop-car-items-img{
+	float: left;
+	width: 20%;
+	height: 100%;
+	line-height: 144px;
+	text-align: center;
+}
+.shop-car-items-img img{
+	width: 60px;
+	height: 60px;
+}
+
+.shop-car-items-name{
+	float: left;
+	width: 40%;
+	height: 100%;
+	font-size: 13px;
+	line-height: 1.2;
+}
+.shop-car-items-name div{
+	padding-top: 20px;
+	padding-left: 3px;
+	padding-right: 5px;	
+}
+.shop-car-items-price{
+	float: left;
+	width: 18%;
+	height: 100%;
+	font-size: 13px;
+	padding-top: 18px;
+	padding-right: 10px;
+}
+.shop-car-items-price p{
+	float: right;
+	margin-bottom: 0px;
+}
+.shop-car-items-edit{
+	float: left;
+	width: 10%;
+	height: 100%;
+	line-height: 95px;
+	font-size: 13px;
+}
+
+
+/*----------Foot-----------------*/
+.shop-car-foot{
+	width: 100%;
+	height: 55px;
+	background-color: #FFFFFF;
+	position: absolute;
+	bottom: 55px;
+}
+
+.shop-car-foot-check{
+	float: left;
+	text-align: center;
+	height: 100%;
+	width: 12%;
+	line-height: 67px;
+	
+}
+.shop-car-foot-check img{
+	width: 27px;
+	height: 27px;
+	src: url("img/circle.png") no-repeat;
+}
+.shop-car-foot-check-text{
+	float: left;
+	height: 100%;
+	width: 10%;
+	line-height: 50px;
+}
+.shop-car-foot-price{
+	float: left;
+	width: 50%;
+	height: 100%;
+	color: #FC5959;
+	text-align: center;
+	line-height: 50px;
+	/*background-color: #3CC51F;*/
+	
+}
+.shop-car-foot-account{
+	float: left;
+	width: 28%;
+	height: 100%;
+	text-align: center;
+	color: #FC5959;
+	padding-top: 12px;
+	/*background-color: #10AEFF;*/
+}
+.shop-car-foot-account input{
+	padding: 3px 6px;
+	border-radius: 5px;
+	background-color: #FC5959;
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

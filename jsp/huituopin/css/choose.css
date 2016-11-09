@@ -1,0 +1,55 @@
+html
+{
+    font-family: "黑体";
+	height: 100%;
+	margin: 0;
+    -webkit-text-size-adjust: 100%;
+}
+
+body
+{
+	background-color: #EFEFF4;
+	height: 100%;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+}
+.choose-header{
+	width:100%;
+	height: 16%;
+	margin: 0;
+}
+.choose-text{
+	margin: 0;
+	padding: 15%;
+	text-align: center;
+	font-size: 13px;
+	color:black;
+	position:relative
+}
+.choose-content{
+	width:100%;
+	height: 71%;
+}
+.choose-section{
+	width:100%;
+	height: 50%;
+	margin: 0;
+}
+.choose-id{
+	width:80%;
+	height: 100%;
+	
+}
+.choose-foot{
+	width:100%;
+	height: 7%;
+	margin: 0;
+}
+.choose-button{
+	width:100%;
+	height: 100%;
+	font-size: 15px;
+	color: white;
+	border: 0;
+	background-color:#fc5959;
+}

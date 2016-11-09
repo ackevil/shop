@@ -1,0 +1,50 @@
+.left{
+	width: 15%;
+	height: 50px;
+	float: left;
+	padding-left: 5px;
+}
+.right{
+	width: 85%;
+	float: left;
+	padding-left: 8px;
+}
+.name{
+	font-size: 15px;
+	color: #3D6594;
+}
+.rating{
+	font-size: 14px;
+	line-height: 1;
+	color: black;
+}
+.time{
+	height: 20px;
+	width: 100%;
+	font-size: 12px;
+	padding-top: 5px;
+	color: #9B9B9B;
+}
+.rating-image{
+	float: right;
+	height: 14px;
+	max-width: 14px;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+.leaveMsg{
+width:100%;
+margin:0px;
+padding:0px;
+padding-top:3vh;
+padding-left:1vw;
+color: black;
+}
+.reply{
+width:100%;
+font-family:"黑体";
+margin:0px;
+padding:0px;
+padding-left:1vw;
+color: black;
+}

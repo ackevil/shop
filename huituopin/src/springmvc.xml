@@ -1,0 +1,146 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd  
+           http://www.springframework.org/schema/context   
+           http://www.springframework.org/schema/context/spring-context-4.0.xsd
+            http://www.springframework.org/schema/aop 
+            http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+            http://www.springframework.org/schema/tx 
+           http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+           http://www.springframework.org/schema/mvc 
+            http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd 
+           http://www.quartzscheduler.org/ns/quartz
+           http://www.opensymphony.com/quartz/xml/job_scheduling_data_1_5.xsd
+           http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd           
+           http://cxf.apache.org/transports/http/configuration 
+           http://cxf.apache.org/schemas/configuration/http-conf.xsd"
+	default-autowire="byName" default-lazy-init="false">
+	<context:component-scan base-package="com"
+		use-default-filters="true">
+	</context:component-scan>
+	<!--Annotation-based的bean管理方式 -->
+	<mvc:annotation-driven />
+	<!--支持@AspectJ标记 -->
+	<aop:aspectj-autoproxy />
+	
+
+	 <mvc:resources location="/WEB-INF/wechat/" mapping="/wechat/**"/>
+	 <mvc:resources location="/WEB-INF/admin/" mapping="/admin/**"/>
+	 <mvc:resources location="/WEB-INF/pc/" mapping="/pc/**"/>
+	 <mvc:resources location="/resource/" mapping="/resource/**"/>
+	 
+	 
+	
+	
+	 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">    
+     <property name="prefix" value="/WEB-INF/" />    
+     <property name="suffix" value=".jsp" />    
+    </bean>  
+	<!-- 数据源 -->
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+	<!-- 配置druid连接池 开始 -->
+	<bean id="ali" class="com.alibaba.druid.pool.DruidDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${datasource.driverClassNameDB2}"></property>
+		<property name="url" value="${datasource.url2}"></property>
+		<property name="username" value="${datasource.usernameDB2}"></property>
+		<property name="password" value="${datasource.passwordDB2}"></property>
+		<!-- 配置初始化大小、最小、最大 -->
+		<property name="initialSize" value="1" />
+		<property name="minIdle" value="1" />
+		<property name="maxActive" value="20" />
+		<!-- 配置获取连接等待超时的时间 -->
+		<property name="maxWait" value="60000" />
+		<!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+		<!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+		<property name="validationQuery" value="select 1 from dual" />  
+		<property name="poolPreparedStatements" value="true" />
+		<property name="maxPoolPreparedStatementPerConnectionSize"
+			value="20" />
+		<!-- 配置监控统计拦截的filters，去掉后监控界面sql无法统计 -->
+	</bean>
+	
+	<bean id="mySessionFactory"
+        class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="ali"></property>
+        <!-- 支持实体类注解方式 -->
+        <property name="packagesToScan" value="com." />
+
+        <property name="hibernateProperties">
+            <props>
+            	<prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.dialect">${hibernate.dialectDB2}</prop>            
+                <prop key="hibernate.format_sql">true</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <!-- <prop key="hibernate.hbm2ddl.auto">update</prop> -->
+                <!-- 如果开启, Hibernate将在SQL中生成有助于调试的注释信息, 默认值为false. 取值 true | false(DB2必须为false)。 -->
+                <prop key="hibernate.use_sql_comments">true</prop>
+                <!-- Fetch Size 是设定JDBC的Statement读取数据的时候每次从数据库中取出的记录条数。 -->
+                <prop key="hibernate.jdbc.fetch_size">50</prop>
+                <!-- Batch Size是设定对数据库进行批量删除，批量更新和批量插入的时候的批次大小 -->
+                <prop key="hibernate.jdbc.batch_size">25</prop>
+                <!-- 允许使用外连接抓取.取值. true | false -->
+                <prop key="hibernate.use_outer_join">true</prop>
+                <!-- 外连接抓取树的最大深度,建议在0到3之间 -->
+                <prop key="hibernate.max_fetch_depth">1</prop>
+                <!-- 强制Hibernate按照被更新数据的主键，为SQL更新排序。这么做将减少在高并发系统中事务的死锁。 取值 true | false  -->
+                <prop key="hibernate.order_updates">true</prop>
+                <!-- 如果开启, Hibernate将收集有助于性能调节的统计数据.取值true|false -->
+                <prop key="hibernate.generate_statistics">false</prop>
+            </props>
+        </property>
+    </bean>
+    <!-- 开始配置 事务拦截器 -->
+    <bean id="transactionManager"
+        class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="SessionFactory" ref="mySessionFactory" />
+    </bean>
+    <!-- 使用annotation定义事务 -->
+    <tx:annotation-driven transaction-manager="transactionManager"
+        proxy-target-class="true" />
+    <mvc:interceptors>
+        <bean id="openSessionInViewInterceptor"
+            class="org.springframework.orm.hibernate4.support.OpenSessionInViewInterceptor">
+            <property name="SessionFactory" ref="mySessionFactory" />
+        </bean>
+    </mvc:interceptors>
+    
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+ 			<tx:method name="find*" read-only="true" /> 
+			<tx:method name="get*" read-only="true" /> 
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="delete*" propagation="REQUIRED" />
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+	<aop:config>  
+        <aop:pointcut id="allManagerMethod"  
+            expression="execution(* com.huituopin.*.*.*(..))" />  
+        <aop:advisor advice-ref="txAdvice"  pointcut-ref="allManagerMethod" />  
+    </aop:config>  
+   
+    <!-- 支持上传文件 -->
+    <bean id="multipartResolver"
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+</beans>  

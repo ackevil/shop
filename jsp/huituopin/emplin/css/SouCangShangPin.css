@@ -1,0 +1,64 @@
+body{
+	background-color: #FFFFFF;
+}
+.product-collected-list-item{
+	height: 160px;
+	width: 100%;
+	margin-top: 13px;
+	margin-left: 10px;
+	border:1px solid #EEEEEE;
+	border-top:none;
+	
+}
+.product-collected-list-item .left{
+	float: left;
+	height: 160px;
+	width: 40%;
+}
+.product-collected-list-item .left img{
+	height: 159px;
+	width: 100%;
+}
+.product-collected-list-item .right{
+	width: 60%;
+	height: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: right;
+}
+.product-collected-list-item .right .right-top{
+	font-size: 13px;
+	color: #424242;	
+	padding-bottom: 80px;   /*这里有问题*/   
+}
+.product-collected-list-item .right .right-buttom{
+	color: #FC4F4F;
+}
+.product-end{
+	width: 100%;
+	height: 20px;
+	color: #797979;
+	font-size: 14px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

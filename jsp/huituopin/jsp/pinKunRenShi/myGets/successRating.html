@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script type="text/javascript" src="../../../js/footer.js"></script>
+		<script src="../../../js/mui.min.js"></script>
+		<link rel="stylesheet" href="../../../css/mui1.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/footer.css"/>
+		<style type="text/css">
+			.pingjiaBtn{
+				height: 28px;
+				width: 75px;
+				background-color: #fc5959;
+				margin-top: 10px;
+				color: white;
+				border: 0;
+				float:right;
+				margin-right: 10px;
+				font-size: 13px;
+			}
+			.mui-table-view:after {
+				background-color: #efeff4;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="mui-table-view" style="background-color:#efeff4;">									
+			<li class="mui-table-view-cell" style="height: 205px;padding-top: 16px;border: 0;">
+				<div style="height: 30px;width: 100px;margin: 0 auto;padding-top: 80px;font-size: 14px;">
+					<span style="padding-left: 8px;">发表评价成功</span>
+				</div>
+				<div style="height: 30px;width: 100px;margin: 0 auto;padding-top: 40px;">
+					<button style="height: 30px;width: 100px;border: 1px solid #fc5959;color: #fc5959;background-color: #EFEFF4;" onclick="window.location.href='../rating/rating.html'">查看评价</button>
+				</div>
+			</li>
+		</ul>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="#tabbar" id="home">
+				<div class="footericon" style="height: 20px;"><img id="img1" src="../../../img/light1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">慧脱贫</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="#tabbar-with-contact"id="me" >
+				<div class="footericon"><img id="img2" src="../../../img/me1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">我</div>
+			</a>
+		</nav>
+		<script>
+			document.getElementById("home").addEventListener("click",onchangeinnest);
+			document.getElementById("me").addEventListener("click",onchangeinnest1);
+		</script>
+	</body>
+
+</html>

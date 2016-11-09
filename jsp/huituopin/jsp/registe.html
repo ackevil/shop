@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>登录</title>
+    <script src="../js/mui.min.js"></script>
+    <!--<link href="css/mui.min.css" rel="stylesheet"/>-->
+    <link href="../css/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/mui.css">
+		<!--App自定义的css-->
+	<link rel="stylesheet" type="text/css" href="../css/app.css"/>
+</head>
+<body>
+	<div class="login-header">
+		<div class="login-top"></div>
+			<div class="login-imageview">
+				<img src="../img/logo.png" class="login-image"/>
+				<p class="login-text"><span>慧脱贫</span></p>
+			</div>
+		</div>
+		<div class="mui-content">				
+			<form class="mui-input-group" method="post" action="choose.html" >
+				<div class="mui-input-row" >
+					<label>手机号码</label>
+					<input type="text" placeholder="请输入手机号码" id="pN" name="phoneNmb">				
+						<button type="button" class="mui-btn mui-btn-primary" id="yanZM" style="border: 0;height: 30px;">
+							获取验证码
+						</button>					
+					</div>
+					<div class="mui-input-row1" >
+						<label>验证码</label>
+						<input type="text" class="mui-input-clear" placeholder="请输入短信验证码" id="yZ" name="yZM">
+					</div>
+				</div>
+				<div class="login-lastline">
+					<input type="submit" class="login-button" value="下一步" disabled="true" id="tJ"/>
+				</div>								
+			</form> 
+			<script type="text/javascript">
+				var secs=60;
+				var yanZM=document.getElementById("yanZM");
+				yanZM.addEventListener("click",function(){
+					yanZM.style.backgroundColor="darkgray";
+					yanZM.disabled=true;				
+					yanZM.innerHTML="";
+					for(var i=0;i<=secs;i++){
+						window.setTimeout("update("+i+")",i*1000);
+					}
+					
+				})
+				function update(num){
+					if(num==secs){
+						yanZM.innerHTML="获取验证码"
+						yanZM.disabled=false;
+					}
+					else{
+						var deadtime=secs-num;
+						yanZM.innerHTML="等待"+deadtime;						
+					}
+					
+				}
+				//实现即时监听输入数据		
+				var inp=document.getElementById("pN");
+				var inpyz=document.getElementById("yZ");
+				function immediate(){					
+					if("\v"=="v"){
+						inp.onpropertychange=webChange;
+						inpyz.onpropertychange=webChange;
+					}
+					else{
+						inp.addEventListener("input",webChange,false);
+						inpyz.addEventListener("input",webChange,false);
+					}							
+				}
+				function webChange(){
+					if(inp.value&&inpyz.value){document.getElementById("tJ").disabled=false}
+					else{document.getElementById("tJ").disabled=true}
+				}
+				immediate();
+				
+				
+			</script> 
+</body>
+</html>

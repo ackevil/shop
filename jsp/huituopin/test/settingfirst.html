@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人信息</title>
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../css/app.css"/>
+		<style type="text/css">
+			.headimage{
+				height: 180px;
+				width: 100%;
+			}
+			.icondiv{
+				height: 30px;
+				width: 30px;
+				margin: 0 auto;
+			}
+			.iconimg{
+				max-height: 35px;
+				max-width: 35px;
+				padding-top: 5px;
+			}
+			.footer{
+				height: 30px;
+				width: 15px;
+				margin: 0 auto;
+				padding-top: 10px;
+			}
+			.footerimg{
+				max-height: 15px;
+				max-width: 15px;
+				padding-top: 10px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="mui-table-view "style="height: 70px;">
+			<li class="mui-table-view-cell" >
+				<a href="#account" class="mui-navigate-right" style="margin-top: -14px;height: 70px;">
+					<span style="font-size: 14px;float: left;padding-top: 13px;">头像</span>
+					<img class="mui-media-object mui-pull-right head-img" src="../../img/tupian.jpg" style="height: 48px;max-width: 50px;margin-right: 20px;"/>
+					<div class="xiangxi" >
+						
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div style="height:12px;"></div>
+		<ul class="mui-table-view mui-table-view-chevron" style="font-size: 14px;">
+			<li class="mui-table-view-cell" style="height: 40px;">
+				<a href="#notifications" class="mui-navigate-right" style="padding-top: 8px;">姓名
+				<span class="mui-pull-right" style="margin-right: -30px;">张军</span></a>
+			</li>
+			<li class="mui-table-view-cell"style="height: 40px;">
+				<a href="#privacy" class="mui-navigate-right"style="padding-top: 8px;">账户类型
+				<span class="mui-pull-right" style="margin-right: -30px;">贫困人士</span></a>
+			</li>
+		</ul>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="#tabbar" id="home">
+				<div class="icondiv"><img id="img1" src="../../img/light1.png" class="footer"/></div>
+				<span class="mui-tab-label" style="font-size: 12px;">慧脱贫</span>
+			</a>
+			<a class="mui-tab-item mui-active" href="#tabbar-with-contact"id="me">
+				<div class="icondiv"><img id="img2" src="../../img/me1.png" class="footer"/></div>
+				<span class="mui-tab-label" style="font-size: 12px;">我</span>
+			</a>
+		</nav>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+*{
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+body{
+	font-family: "黑体";
+	font-size: 14px;
+	color: gray;
+}
+.box{
+	margin: auto;
+	width: 430px;
+	
+	
+}
+.middle_top{
+	height: 210px;
+	
+}
+.main_title{
+	font-size: 17px;
+	height: 20px;
+	text-align: center;
+	margin-top: 40px;
+}

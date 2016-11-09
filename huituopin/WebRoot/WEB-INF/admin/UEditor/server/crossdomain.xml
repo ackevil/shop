@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cross-domain-policy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.adobe.com/xml/schemas/PolicyFile.xsd">
+	<site-control permitted-cross-domain-policies="master-only"/>
+	<allow-access-from domain="*"/>
+	<allow-http-request-headers-from domain="*" headers="*"/>
+</cross-domain-policy>
+<!--跨域文件。如需使用flash跨域上传，请将此文件置于目标服务器的根目录-->

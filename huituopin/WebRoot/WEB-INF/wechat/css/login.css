@@ -1,0 +1,67 @@
+html
+{
+    font-family: sans-serif;
+	
+	margin: 0;
+    -webkit-text-size-adjust: 100%;
+}
+
+body
+{
+	background-color: #efeff4;
+	
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.login-header{
+	width:100%;
+	height:162px
+}
+.login-top{
+	height: 48px;
+}
+.login-imageview{
+	display:block;
+	margin:0 auto;
+	width:75px;
+	height:75px;
+	//background-color: #fc5959;
+	//background-image: url(../img/light.png);
+	position:relative
+}
+.login-image{
+	display:table;
+	margin:0 auto;
+	
+	max-width: 75px;
+	max-height: 75px;
+	position:relative
+}
+.login-text{
+	text-align: center;
+	font-family: "黑体";
+	font-size: 17px;
+	margin-top: 5px;
+	color:#00bce4;
+	position:relative
+}
+
+.login-lastline{
+	height:100px;
+	width:100%;
+	background-color: #efeff4;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.login-button{
+	width:100%;
+	height:50%;
+	outline: none;
+	font-size: 14px;
+	color: white;
+	border-color: transparent;
+	background-color:#00bce4;
+}
+

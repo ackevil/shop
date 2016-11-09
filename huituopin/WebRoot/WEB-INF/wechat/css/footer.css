@@ -1,0 +1,30 @@
+.headimage{
+	height: 183px;
+	width: 100%;
+}
+.icondiv{
+	height: 30px;
+	width: 30px;
+	margin: 0 auto;
+}
+.iconimg{
+	max-height: 35px;
+	max-width: 35px;
+	padding-top: 5px;
+}
+.footer{
+	height: 20px;
+	width: 10px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+.footericon{
+	height: 20px;
+	width: 30px;
+	margin: 0 auto;
+}
+.footerimg{
+	max-height: 10px;
+	max-width: 10px;
+	padding-top: 10px;
+}		

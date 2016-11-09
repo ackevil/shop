@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/login.css">
+		<link rel="stylesheet" href="../css/mui.css">
+		<title>登录</title>
+		<style>
+			body{
+				background-color: white;
+				font:"黑体";
+			}
+			.mui-control-content {
+				background-color: white;
+				min-height: 500px;
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			a{
+				font-size: 18px;
+				color: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="middle_top">
+				<img name="logo" src="../images/logo.jpg" style="width: 250px;height: 90px;border: 0;margin-top: 120px;margin-left: 50px;"/> 
+ 			</div>
+ 			<div id="slider" class="mui-slider" style="margin-top:30px ;">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1mobile">
+						手机账号登录
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						微信扫码登录
+					</a>
+				</div>
+				<!--<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-2"></div>-->
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<input type="text" placeholder="请输入手机号码" id="pN" name="phoneNmb" style="margin-top: 30px;margin-bottom: 0px;height: 50px;">				
+								<input type="text" placeholder="请输入短信验证码" id="pN" name="phoneNmb" style="margin-top: 30px;height: 50px;margin-bottom: 5px">	
+									<button type="button" class="mui-btn mui-btn-primary" id="yanZM" style="height: 35px;border-radius: 25px;color: #00BCE4;background-color: white;border: 1px solid #D0D0D0;position: absolute;z-index: 10;margin-left: 240px;margin-top: -48px;">
+										获取验证码
+									</button>
+								<p style="color: red;font-size: 15px;padding-left: 15px;height: 25px;">短信验证码错误</p>
+								<button style="width: 100%;height: 50px;background-color: #00BCE4;border: 0px;font-size: 20px;color: white;">登录</button>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<p style="margin-top: 30px;font-size: 21px;text-align: center;color: black;">Log In to WeChat</p>
+								<img src="../images/erweima.jpg" style="height: 300px;width: 300px;margin-left: 25px;"/>
+								<p style="margin-top: 15px;font-size: 19px;text-align: center;color: black;">Scan QR Code in WeChat to log in</p>
+								<p style="font-size: 19px;text-align: center;color: black;">“慧脱贫”</p>
+
+							</div>
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+ 			
+ 			
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+			})(mui);
+		</script>
+		
+	</body>
+</html>
+

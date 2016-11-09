@@ -1,0 +1,100 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "����";
+}
+.my_item{
+	width: 100%;
+	height: 100px;
+	background-color: #ffffff;
+	margin-bottom: 10px;
+}
+.my_item_ico{
+	width: 15%;
+	height: 100px;
+	float: left;
+}
+.my_item_ico img{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 50%;
+	margin-top: -15px;
+	left: 50%;
+	margin-left: -15px;
+}
+.my_item_goodico{
+	width: 20%;
+	height: 100px;
+	float: left;
+}
+.my_item_goodico img{
+	width: 60px;
+	height: 60px;
+	position: relative;
+	top: 50%;
+	margin-top: -30px;
+	left: 50%;
+	margin-left: -30px;
+}
+.my_item_gooddesc{
+	width: 35%;
+	float: left;
+	padding-top: 30px;
+	font-size: small;
+}
+.my_item_price{
+	width: 15%;
+	float: left;
+	padding-top: 30px;
+	text-align: right;
+}
+.my_item_opt{
+	width: 15%;
+	float: left;
+	padding-top: 44px;
+	text-align: center;
+}
+
+.my_bottom{
+	border-top:1px solid #CFCFCF ;
+	position: fixed;
+	width: 100%;
+	height: 45px;
+	float: right;
+	bottom: 50px;
+	
+	background-color: #ffffff;
+}
+.my_pay{
+	width: 100%;
+	height: 45px;
+}
+.my_td1{
+	width: 33%;
+	height: 45px;
+}
+.my_td1 img{
+	width: 22px;
+	height: 22px;
+	position: relative;
+	margin-top: px;
+	margin-left: 10px;
+	float: left;
+}
+.my_td1 span{
+	float: left;
+	color: #CFCFCF;
+	font-size: 15px;
+	margin-left: 5px;
+}
+.my_td2{
+	width: 34%;
+	color: rgb(252,89,89);
+	text-align: center;
+	font-size: 15px;
+}
+.my_td3{
+	padding: 5px;
+	width: 33%;
+}

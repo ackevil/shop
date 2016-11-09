@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>慧脱贫</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../../css/mui1.css">
+		<link rel="stylesheet" href="../../../css/footer.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../../css/app.css" />	
+		<style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 550px;
+				
+				
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			
+			#sliderSegmentedControl a.mui-active{
+				color: red;
+			}
+			.payBtn{
+				font-size: 12px;
+				background-color: #fc5959;
+				color: white;
+			}
+			.cancelBtn{
+				font-size: 12px;
+				border-color:rgba(19,18,18,0.31);
+				margin-right:10px;
+				border: 1px solid #CFCFCF;
+				color:#A2A2A2;
+			}
+			.mui-popup-inner
+			{
+			    position: relative;
+			
+			    padding: 15px;
+			
+			    //border-radius: 13px 13px 0 0;
+			    background: rgba(255, 255, 255, .95);
+			}
+			.mui-popup{
+				width:270px
+			}
+			.mui-popup-title{
+				height: 35px;
+				border-bottom: 1px solid #CFCFCF;
+			}
+			.mui-popup-title + .mui-popup-text{
+				padding-top: 10px;
+			}
+			.mui-popup-inner:after{
+				background-color: transparent;
+			}
+			.mui-popup-buttons{
+				height:55px;
+				background-color: white;
+			}
+			.mui-popup-button:first-child{
+				background-color:#04BE02 ;
+				border:0;
+				color: white;
+				margin-left: 20px;
+				margin-right: 5px;
+				padding-bottom: 10px;
+				height: 40px;
+			}
+			.mui-popup-button:last-child{
+				height: 40px;
+				color: black;
+				margin-right: 20px;
+				margin-left: 5px;
+				border: 1px solid #CFCFCF;
+			}
+			.mui-popup-button{		
+				line-height: 15px;
+				font-size: 15px;				
+			}
+		</style>		
+	</head>
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider" style="background-color:rgba(49,45,45,0);height:initial">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="background-color:white;">
+					<a id="cir1" class="mui-control-item mui-active" href="#item1mobile">
+						全部
+					</a>
+					<a id="cir2" class="mui-control-item" href="#item2mobile">
+						待付款
+					</a>
+					<a id="cir3" class="mui-control-item" href="#item3mobile">
+						待发货
+					</a>
+					<a id="cir4" class="mui-control-item" href="#item4mobile">
+						待收货
+					</a>
+					<a id="cir5" class="mui-control-item" href="#item5mobile">
+						待评价
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4" style="background-color:red; width:20%;"></div>
+				<div class="mui-slider-group" style="margin-top:10px">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active" style="background-color: #efeff4;border: 0;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell" style="height:43px;padding-top: 15px;">
+										<span class="mui-pull-left"style="font-size: 14px;color: #A2A2A2;">2016-04-27 10:25</span>
+										<span class="mui-pull-right" style="font-size: 14px;color:red;">等待买家付款</span>
+									</li>
+									<li class="mui-table-view-cell" style="height:100px;padding-top: 15px;">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../images/tupian4.jpg">
+										<div class="mui-media-body" style="width: 190px;font-size: 13px;letter-spacing: -2px;float: left;">
+											多鲜 牛奶蛋羹味夹心三明治吐司口袋面包蒸蛋糕早餐零食整箱750克
+											<p class='mui-ellipsis' style="letter-spacing: 0px;font-size: 12px;">口味：牛奶蛋糕味</p>
+										</div>
+						
+									</li>
+									<li class="mui-table-view-cell" style="height:38px;padding-top: 9px;">
+										<a id="head" style="font-size: 13px;color: #A2A2A2;">共一种商品
+											<span class="mui-pull-right">总金额：¥36.80</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell" style="height:53px;font-size: 15px ;padding-top: 11px;">
+										<button class="mui-pull-right payBtn"id="payOrder1" onclick="window.location.href='payment.html'" >付款</button>
+										<button class="mui-pull-right cancelBtn" id="cancelOrder1">取消订单</button>
+									</li>
+								</ul>
+								
+								<div style="height: 10px;background-color: #efeff4;"></div>
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell" style="height:43px;padding-top: 15px;">
+										<span class="mui-pull-left"style="font-size: 14px;color: #A2A2A2;">2016-04-27 10:25</span>
+										<span class="mui-pull-right" style="font-size: 14px;color:red;">等待买家付款</span>
+									</li>
+									<li class="mui-table-view-cell" style="height:100px;padding-top: 15px;">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../images/tupian4.jpg">
+										<div class="mui-media-body" style="width: 190px;font-size: 13px;letter-spacing: -2px;float: left;">
+											多鲜 牛奶蛋羹味夹心三明治吐司口袋面包蒸蛋糕早餐零食整箱750克
+											<p class='mui-ellipsis' style="letter-spacing: 0px;font-size: 12px;">口味：牛奶蛋糕味</p>
+										</div>
+						
+									</li>
+									<li class="mui-table-view-cell" style="height:38px;padding-top: 9px;">
+										<a id="head" style="font-size: 13px;color: #A2A2A2;">共一种商品
+											<span class="mui-pull-right">总金额：¥36.80</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell" style="height:53px;font-size: 15px ;padding-top: 11px;">
+										<button class="mui-pull-right payBtn">付款</button>
+										<button class="mui-pull-right cancelBtn" >取消订单</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content"style="background-color: #efeff4;border: 0;">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell" style="height:50px;padding-top: 15px;">
+										<span class="mui-pull-left"style="font-size: 15px;color: #A2A2A2;">2016-04-27 10:25</span>
+										<span class="mui-pull-right" style="font-size: 14px;color:red;">等待买家付款</span>
+									</li>
+									<li class="mui-table-view-cell" style="height:100px;padding-top: 15px;">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../images/tupian4.jpg">
+										<div class="mui-media-body" style="width: 190px;font-size: 13px;letter-spacing: -2px;float: left;">
+											多鲜 牛奶蛋羹味夹心三明治吐司口袋面包蒸蛋糕早餐零食整箱750克
+											<p class='mui-ellipsis' style="letter-spacing: 0px;font-size: 12px;">口味：牛奶蛋糕味</p>
+										</div>
+						
+									</li>
+									<li class="mui-table-view-cell" style="height:38px;padding-top: 9px;">
+										<a id="head" style="font-size: 13px;color: #A2A2A2;">共一种商品
+											<span class="mui-pull-right">总金额：¥36.80</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell" style="font-size: 15px ;padding-top: 11px;">
+										<button class="mui-pull-right" style="font-size: 12px;background-color: #fc5959;color: white;">付款</button>
+										<button class="mui-pull-right cancelBtn" >取消订单</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content"style="background-color: #efeff4;border: 0;">
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell" style="height:50px;padding-top: 15px;">
+										<span class="mui-pull-left"style="font-size: 15px;color: #A2A2A2;">2016-04-27 10:25</span>
+										<span class="mui-pull-right" style="font-size: 14px;color:red;">等待卖家发货</span>
+									</li>
+									<li class="mui-table-view-cell" style="height:100px;padding-top: 15px;">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../images/tupian4.jpg">
+										<div class="mui-media-body" style="width: 190px;font-size: 13px;letter-spacing: -2px;float: left;">
+											多鲜 牛奶蛋羹味夹心三明治吐司口袋面包蒸蛋糕早餐零食整箱750克
+											<p class='mui-ellipsis' style="letter-spacing: 0px;font-size: 12px;">口味：牛奶蛋糕味</p>
+										</div>
+						
+									</li>
+									<li class="mui-table-view-cell" style="height:38px;padding-top: 9px;">
+										<a id="head" style="font-size: 13px;color: #A2A2A2;">共一种商品
+											<span class="mui-pull-right">总金额：¥36.80</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell" style="font-size: 15px ;padding-top: 11px;">
+										<button class="mui-pull-right" style="font-size: 12px;background-color: #fc5959;color: white;">提醒</button>
+										<button class="mui-pull-right cancelBtn" >取消订单</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content"style="background-color: #efeff4;border: 0;">
+						<div id="scroll4" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell" style="height:50px;padding-top: 15px;">
+										<span class="mui-pull-left"style="font-size: 15px;color: #A2A2A2;">2016-04-27 10:25</span>
+										<span class="mui-pull-right" style="font-size: 14px;color:red;">等待买家收货</span>
+									</li>
+									<li class="mui-table-view-cell" style="height:100px;padding-top: 15px;">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../images/tupian4.jpg">
+										<div class="mui-media-body" style="width: 190px;font-size: 13px;letter-spacing: -2px;float: left;">
+											多鲜 牛奶蛋羹味夹心三明治吐司口袋面包蒸蛋糕早餐零食整箱750克
+											<p class='mui-ellipsis' style="letter-spacing: 0px;font-size: 12px;">口味：牛奶蛋糕味</p>
+										</div>
+						
+									</li>
+									<li class="mui-table-view-cell" style="height:38px;padding-top: 9px;">
+										<a id="head" style="font-size: 13px;color: #A2A2A2;">共一种商品
+											<span class="mui-pull-right">总金额：¥36.80</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell" style="font-size: 15px ;padding-top: 11px;">
+										<button class="mui-pull-right" style="font-size: 12px;background-color: #fc5959;color: white;">收货</button>
+										<button class="mui-pull-right cancelBtn" >删除订单</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item5mobile" class="mui-slider-item mui-control-content"style="background-color: #efeff4;border: 0;">
+						<div id="scroll5" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell" style="height:43px;padding-top: 15px;">
+										<span class="mui-pull-left"style="font-size: 14px;color: #A2A2A2;">2016-04-27 10:25</span>
+										<span class="mui-pull-right" style="font-size: 14px;color:#fc5959;">交易成功</span>
+									</li>
+									<li class="mui-table-view-cell" style="height:100px;padding-top: 15px;">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../images/tupian4.jpg">
+										<div class="mui-media-body" style="width: 190px;font-size: 13px;letter-spacing: -2px;float: left;">
+											多鲜 牛奶蛋羹味夹心三明治吐司口袋面包蒸蛋糕早餐零食整箱750克
+											<p class='mui-ellipsis' style="letter-spacing: 0px;font-size: 12px;">口味：牛奶蛋糕味</p>
+										</div>
+						
+									</li>
+									<li class="mui-table-view-cell" style="height:38px;padding-top: 9px;">
+										<a id="head" style="font-size: 13px;color: #A2A2A2;">共一种商品
+											<span class="mui-pull-right">总金额：¥36.80</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell" style="height:53px;font-size: 15px ;padding-top: 11px;">
+										<button class="mui-pull-right payBtn">评价</button>
+										<button class="mui-pull-right cancelBtn" >删除订单</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="../home.html" id="home">
+				<div class="footericon" style="height: 20px;"><img id="img1" src="../../../img/light1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">慧脱贫</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="#tabbar-with-contact"id="me" >
+				<div class="footericon"><img id="img2" src="../../../img/me1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">我</div>
+			</a>
+		</nav>
+		<script src="../../../js/mui.min.js"></script>
+		<script>
+			document.getElementById("cancelOrder1").addEventListener('tap', function() {
+				var btnArray = ['确认取消','取消'];
+				mui.confirm('若取消该订单，即终止交易 ','安全提示 ',btnArray, function() {
+					//info.innerText = '你刚关闭了警告框';
+				});
+			});
+		</script>
+	</body>
+
+</html>

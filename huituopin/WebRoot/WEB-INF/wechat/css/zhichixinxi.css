@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+.center_h51{
+	margin:0px;
+	padding-left:15px;
+	width:100%;
+	font-family:"黑体";
+	color: black;
+	font-size:14px;
+	padding-top:1vh;
+	padding-bottom:1vh;
+	border-top:#9b9b9b solid 1px;
+	}
+.center_h52{
+	margin:0px;
+	width:100%;
+	font-family:"黑体";
+	font-weight:bold;
+	font-size:4vw;
+	padding-top:1vh;
+	padding-bottom:1vh;
+	}
+.center_input1{
+	width:100%;
+	height:7vh;
+	border-width:0px;
+	border-bottom:#e8e8e8 solid 1px;
+	}
+.center_input2{
+	width:100%;
+	height:7vh;
+	border-width:0px;
+	border-bottom:#cfcfcf solid 1px;
+	}
+.center_btn{
+	width:100%;
+	height: 45px;
+	margin-left:15px;
+	margin-right: 15px;
+	background-color:#40d319;
+	color:#ffffff;
+	font-family:"黑体";
+	font-size: 15px;
+	border:none;
+	}
+
+

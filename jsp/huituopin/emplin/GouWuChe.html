@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<style type="text/css">
+			.headimage {
+				height: 180px;
+				width: 100%;
+			}
+			
+			.icondiv {
+				height: 30px;
+				width: 30px;
+				margin: 0 auto;
+			}
+			
+			.iconimg {
+				max-height: 35px;
+				max-width: 35px;
+				padding-top: 5px;
+			}
+			
+			.footer {
+				height: 30px;
+				width: 15px;
+				margin: 0 auto;
+				padding-top: 10px;
+			}
+			
+			.footerimg {
+				max-height: 15px;
+				max-width: 15px;
+				padding-top: 10px;
+			}
+		</style>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/GouWuChe.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/shopCar.css" />
+	</head>
+
+	<body>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar" id="home">
+				<div class="icondiv"><img id="img1" src="img/light.png" class="footer" /></div>
+				<span class="mui-tab-label" style="font-size: 12px;">慧脱贫</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact" id="me">
+				<div class="icondiv"><img id="img2" src="img/me.png" class="footer" /></div>
+				<span class="mui-tab-label" style="font-size: 12px;">我</span>
+			</a>
+		</nav>
+
+		<div class="shop-car">
+			<form>
+				<div class="shop-car-items">
+					<input name="checkbox" value="Item 1" type="checkbox" style="display: none;">
+					<div class="shop-car-items-check"><img src="img/correct.png" /></div>
+					<div class="shop-car-items-img"><img src="img/tupian1.jpg" /></div>
+					<div class="shop-car-items-name">
+						<div>
+							<span>多线多线多线多线多线多线多线</span>
+						</div>
+					</div>
+					<div class="shop-car-items-price">
+						<div>
+							<p>¥19.80</p>
+							<br />
+							<p>X1</p>
+						</div>
+					</div>
+					<div class="shop-car-items-edit"><a>编辑</a></div>
+				</div>
+
+				<div style="height: 15px;background-color: #EFEFF4;"></div>
+
+				<div class="shop-car-items">
+					<input name="checkbox" value="Item 1" type="checkbox" style="display: none;">
+					<div class="shop-car-items-check"><img src="img/correct.png" /></div>
+					<div class="shop-car-items-img"><img src="img/tupian1.jpg" /></div>
+					<div class="shop-car-items-name">
+						<div>
+							<span>多线多线多线多线多线多线多线</span>
+						</div>
+					</div>
+					<div class="shop-car-items-price">
+						<div>
+							<p>¥19.80</p>
+							<br />
+							<p>X1</p>
+						</div>
+					</div>
+					<div class="shop-car-items-edit"><a>编辑</a></div>
+				</div>
+
+				<div style="height: 15px;background-color: #EFEFF4;"></div>
+
+				<div class="shop-car-items">
+					<input name="checkbox" value="Item 1" type="checkbox" style="display: none;">
+					<div class="shop-car-items-check"><img src="img/correct.png" /></div>
+					<div class="shop-car-items-img"><img src="img/tupian1.jpg" /></div>
+					<div class="shop-car-items-name">
+						<div>
+							<span>多线多线多线多线多线多线多线</span>
+						</div>
+					</div>
+					<div class="shop-car-items-price">
+						<div>
+							<p>¥19.80</p>
+							<br />
+							<p>X1</p>
+						</div>
+					</div>
+					<div class="shop-car-items-edit"><a>编辑</a></div>
+				</div>
+
+				<div class="shop-car-foot">
+					<div class="shop-car-foot-check">
+						<img src=""/>
+					</div>
+					<div class="shop-car-foot-check-text">
+						<p>全选</p>
+					</div>
+					<div class="shop-car-foot-price">
+						<span>合计:</span>
+						<span>¥73.6</span>
+					</div>
+					<div class="shop-car-foot-account">
+						<input type="button" value="结算(2)"/>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+
+	<script>
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+		mui('.mui-input-group').on('change', 'input', function() {
+			var value = this.checked ? "true" : "false";
+			this.previousElementSibling.innerText = "checked：" + value;
+		});
+	</script>
+
+</html>

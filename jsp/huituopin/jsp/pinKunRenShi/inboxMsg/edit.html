@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>登录</title>
+    <link href="../../../css/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../css/mui.css">
+    <link href="../../../css/mui.picker.css" rel="stylesheet" />
+	<link href="../../../css/mui.poppicker.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../../../css/app.css"/>
+	<style>
+		.mui-input-group .mui-input-row{
+			height: 45px;
+		}
+		.mui-input-row label{
+			padding-top: 12px;
+			color: #515151;
+			font-size: 15px;
+			width: 28%;
+		}
+		.mui-input-row label ~ input{
+			margin-top: 2px;
+			font-size: 15px;
+		}
+		.mui-table-view:before{
+			background-color: transparent;
+		}
+		.mui-poppicker-header{
+			padding: 6px;
+		}
+		.mui-poppicker-header .mui-btn{
+			padding: 5px 10px;
+		}
+	</style>
+</head>
+	<body>
+		<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label>收货人</label>
+					<input id="receiver" type="text" placeholder="">				
+					</div>
+					<div class="mui-input-row" >
+						<label>联系电话</label>
+						<input id="tel" type="text" class="mui-input-clear" placeholder="">
+					</div>
+					<div class="mui-input-row" >
+						<label class="mui-navigate-right">所在地区</label>
+						<button id='showCityPicker' style="width: 72%;height: 100%;background-color: transparent;border: 0;" type="button">
+							<span id='cityResult' class="mui-pull-right" style="margin-right: 30px;color: gray;">
+								湖南省 怀化市
+							</span>
+						</button>
+					</div>
+					<div class="mui-input-row1" style="height: 120px;" >
+						<textarea id="textarea" rows="5" placeholder="" style="font-size: 15px;border: 0;margin-top: 10px;"></textarea>						
+					</div>									
+				<div class="login-lastline" style="padding-left: 0;padding-right: 0;padding-top: 14px;">
+					<input id="save" type="submit" class="login-button" value="保存" style="font-size: 15px;background-color:ddarkgray;color: white;" disabled />			
+				</div>				
+		</form> 
+		<script src="../../../js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/picker.js"></script>
+		<script src="../../../js/poppicker.js"></script>
+		<script type="text/javascript">
+			var inp=document.getElementById("receiver");
+			var inpyz=document.getElementById("tel");
+			var inpad=document.getElementById("textarea");
+			var save=document.getElementById("save");
+			function immediate(){					
+				if("\v"=="v"){
+					inp.onpropertychange=webChange;
+					inpyz.onpropertychange=webChange;
+					inpad.onpropertychange=webChange;
+				}
+				else{
+					inp.addEventListener("input",webChange,false);
+					inpyz.addEventListener("input",webChange,false);
+					inpad.addEventListener("input",webChange,false);
+					}							
+			}
+			function webChange(){
+				if(inp.value&&inpyz.value&&inpad.value){
+					save.disabled=false;
+					save.style.background="white";
+					save.style.color="#fc5959";
+				}
+				else{
+					save.disabled=true;
+					save.style.background="darkgray";
+					save.style.color="white";
+				}
+			}
+			immediate();
+			
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					var cityPicker = new $.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showCityPickerButton = doc.getElementById('showCityPicker');
+					var cityResult = doc.getElementById('cityResult');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							cityResult.innerText = items[0].text + " " + items[1].text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);		
+				});
+			})(mui, document);
+		</script>
+	</body>
+</html>

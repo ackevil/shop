@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+		<link rel="stylesheet" href="../css/setttingmsg.css">
+		
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css"/>
+
+	</head>
+	<body>	
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<button id='promptBtn' type="button" style="margin:0px;width: 100%;border: 0;">
+							<span class="mui-pull-left">姓名</span>
+							<span class="mui-pull-right" id="name"></span>
+						</button>								
+					</li>
+					<li class="mui-table-view-cell">
+						<button id='sexBtn' type="button" style="margin:0px;width: 100%;border: 0;">
+							<span class="mui-pull-left">性别</span>
+							<span class="mui-pull-right" id="sex">
+								<form method="get">
+									<label style="margin-right: 10px;">男</label><input type="radio"  value="man" style="margin-right: 30px;"/>
+									<label style="margin-right: 10px;">女</label><input type="radio"  value="woman" style="margin-right: px;"/>
+								</form>
+							</span>
+						</button>	
+					</li>
+					<li class="mui-table-view-cell">
+						<button id='dateBtn' type="button" style="margin:0px;width: 100%;border: 0;">
+							<span class="mui-pull-left">出生年月</span>
+							<span class="mui-pull-right" id="date"></span>
+						</button>
+					</li>
+					<li class="mui-table-view-cell">
+						<button id='nativeBtn' type="button" style="margin:0px;width: 100%;border: 0;">
+							<span class="mui-pull-left">籍贯</span>
+							<span class="mui-pull-right" id="native"></span>
+						</button>								
+					</li>
+					<li class="mui-table-view-cell">
+						<button id='nationBtn' type="button" style="margin:0px;width: 100%;border: 0;">
+							<span class="mui-pull-left">民族</span>
+							<span class="mui-pull-right" id="nation"></span>
+						</button>								
+					</li>
+					<li class="mui-table-view-cell1">
+						<button id='addressBtn' type="button" style="margin:0px;width: 100%;border: 0;">
+							<span class="mui-pull-left">家庭住址</span>
+							<span class="mui-pull-right" id="address"></span>
+						</button>								
+					</li>
+					
+					
+						
+					
+				</div>
+				</ul>	
+				</div>
+				
+					<div>
+						<form action="setting.html">
+							<input id="btn" type="submit" value="确定" style="position:absolute;bottom: 0px;border:0px;width:100%;background-color: #fc5959;color: white;" onclick="click()" />
+						</form>
+					</div>
+						
+				</div>				
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+		
+			document.getElementById("promptBtn").addEventListener('tap', function(e) {
+				e.detail.gesture.preventDefault(); //修复iOS 8.x平台存在的bug，使用plus.nativeUI.prompt会造成输入法闪一下又没了
+				var btnArray = ['取消', '确定'];
+				mui.prompt('', '', '请输入姓名', btnArray, function(e) {
+					if (e.index == 1) {
+						name.innerText = e.value;
+					} else {
+						
+					}
+				})
+			});
+			document.getElementById("dateBtn").addEventListener('tap', function(e) {
+				e.detail.gesture.preventDefault(); //修复iOS 8.x平台存在的bug，使用plus.nativeUI.prompt会造成输入法闪一下又没了
+				var btnArray = ['取消', '确定'];
+				mui.prompt('', '', '请输入出生年月', btnArray, function(e) {
+					if (e.index == 1) {
+						date.innerText = e.value;
+					} else {
+						
+					}
+				})
+			});
+			document.getElementById("nativeBtn").addEventListener('tap', function(e) {
+				e.detail.gesture.preventDefault(); //修复iOS 8.x平台存在的bug，使用plus.nativeUI.prompt会造成输入法闪一下又没了
+				var btnArray = ['取消', '确定'];
+				mui.prompt('', '', '请输入籍贯', btnArray, function(e) {
+					if (e.index == 1) {
+						native.innerText = e.value;
+					} else {
+						
+					}
+				})
+			});
+			document.getElementById("nationBtn").addEventListener('tap', function(e) {
+				e.detail.gesture.preventDefault(); //修复iOS 8.x平台存在的bug，使用plus.nativeUI.prompt会造成输入法闪一下又没了
+				var btnArray = ['取消', '确定'];
+				mui.prompt('', '', '请输入民族', btnArray, function(e) {
+					if (e.index == 1) {
+						nation.innerText = e.value;
+					} else {
+						
+					}
+				})
+			});
+			document.getElementById("addressBtn").addEventListener('tap', function(e) {
+				e.detail.gesture.preventDefault(); //修复iOS 8.x平台存在的bug，使用plus.nativeUI.prompt会造成输入法闪一下又没了
+				var btnArray = ['取消', '确定'];
+				mui.prompt('', '', '请输入家庭住址', btnArray, function(e) {
+					if (e.index == 1) {
+						address.innerText = e.value;
+					} else {
+						
+					}
+				})
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>管理收货地址</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../../css/mui1.css">
+		<style type="text/css">
+			.pingjiaBtn{
+				height: 28px;
+				width: 75px;
+				background-color: #fc5959;
+				margin-top: 10px;
+				color: white;
+				border: 0;
+				float:right;
+				margin-right: 10px;
+				font-size: 13px;
+			}
+			.mui-table-view:after {
+				background-color: #efeff4;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="mui-table-view" style="background-color:#efeff4;">									
+			<li class="mui-table-view-cell" style="height: 205px;padding-top: 16px;border: 0;">
+				<div style="height: 30px;width: 128px;margin: 0 auto;padding-top: 90px;font-size: 16px;">
+					还没有填写过地址
+				</div>
+			</li>
+		</ul>
+		<div>
+			<form action="setting.html">
+				<input id="btn" type="submit" value="添加新地址" style="height:48px;position:absolute;bottom: 0px;border:0px;width:100%;background-color: #fc5959;color: rgba(255,255,255,0.8);font-size: 16px;" onclick="click()" />
+			</form>
+		</div>
+	</body>
+
+</html>

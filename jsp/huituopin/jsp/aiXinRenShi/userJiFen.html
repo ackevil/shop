@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/footer.js"></script>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui1.css">
+		<link rel="stylesheet" href="../../css/footer.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../css/app.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/userJiFen.css" />
+	</head>
+
+	<body>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="../home.html" id="home">
+				<div class="footericon" style="height: 20px;"><img id="img1" src="../../img/light1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">慧脱贫</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="#tabbar-with-contact"id="me" >
+				<div class="footericon"><img id="img2" src="../../img/me1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">我</div>
+			</a>
+		</nav>
+		<div class="mui-content" style="padding-bottom: 0px;">
+			<div class="mui-table-view" style="height: 175px; background-color: #4A90E2;padding-top: 8px;">
+				<div class="JiFenContent">
+					<div class="JiFenContent-div iFenContent-div-top">
+						<span>当前积分</span>
+						<button onclick="click();">兑换记录</button>
+					</div>
+					<div class="JiFenContent-div JiFenContent-div-middle" >
+						<span>998</span>
+						<p>分</p>
+					</div>
+					<div class="JiFenContent-div JiFenContent-div-buttom" >
+						<button onclick="window.location.href='../aiGou/aiGou.html'">积分兑换商品</button>
+					</div>
+				</div>
+			</div>
+			<div class="recent">
+				<span style="color: black;font-size: 14px;">最近30天积分</span>
+			</div>
+			<div class="recent-content" >
+				<span>最近30天无积分记录</span>
+			</div>
+	    </div>
+	</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../../css/shopCar.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/footer.css"/>
+		<script src="../../../js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/shopcar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/footer.js"></script>
+		<style>
+			.mui-bar{
+				box-shadow: 0 0;
+			}
+		</style>
+	</head>
+	<body>
+	  <div id="allItem">
+		<div id="good1" class="my_item">
+			<div class="my_item_ico">
+				<img id="item_img1" src="../../../img/circle.png" onClick="signalSelect('item_img1')"/>
+			</div>
+			<div class="my_item_goodico">
+				<img class="item_img" src="../../../img/food.jpg"/>
+			</div>
+            <div id="content1">
+			    <div id="my_item_gooddesc1" class="my_item_gooddesc">
+				        哈哈今天天气不错这个属股很好吃属股很好吃属股很好吃
+			    </div>
+			</div>
+			<div class="my_item_opt">
+				   <a id="bianji1"  onclick="showNum(1)" href="">编辑</a>
+			</div>
+			<div id="my_item_price1" class="my_item_price">
+				<div id="">
+					¥<div id="price1" style=" display:inline;">36.8</div>
+				</div>
+				<div id="">
+					x<div id="amount1" style=" display:inline;">2</div>
+				</div>
+		    </div>		    
+        </div>
+        <div id="selectNum1" style=" display:none; z-index:-1;width:65%; height:100px; margin-left:35%;">
+            <div style=" width:100%; height:50px;">
+                <div style="height:50px; background-color:#f8f8f8; display:inline;">
+                	<input id="subdece1" type="text" onClick="subduce(1)" value="-" readonly="readonly" style="height:50px; width:31%; text-align:center; margin:0px; border:0px;"/>
+                </div>
+                <div style="height:50px; background-color:#f8f8f8; display:inline;">
+                	<input id="GoogNum1" type="text" value="1" style="height:50px; width:31%; text-align:center; margin:0px;"/>
+                </div>
+                <div style="height:50px; background-color:#f8f8f8; display:inline;">
+                	<input id="add1" type="text" onClick="addNum(1)" value="+" readonly="readonly" style="height:50px; width:31%; text-align:center; margin:0px; border:0px;"/>
+                </div>
+            </div>
+            <div style="">
+                <div style=" width:50%;height:50px;display:inline;">
+                  	<a href="javascript:;" class="weui_btn weui_btn_primary" onClick="completeNum(1)" style="width:50%; float:left; height:50px;">
+                    	完成
+                    </a>
+                </div>
+                <div style=" width:50%;height:50px; display:inline;">
+                    <a href="javascript:;" class="weui_btn weui_btn_warn" style=" width:50%; height:50px; float:right;">
+                    	删除
+                   	</a>
+                </div>
+            </div>
+        </div>
+		<div id="good2" class="my_item">
+			<div class="my_item_ico">
+				<img id="item_img2" src="../../../img/circle.png" onClick="signalSelect('item_img2')"/>
+			</div>
+			<div class="my_item_goodico">
+				<img class="item_img" src="../../../img/food.jpg"/>
+			</div>
+            <div id="content1">
+			    <div id="my_item_gooddesc1" class="my_item_gooddesc">
+				        哈哈今天天气不错这个属股很好吃属股很好吃属股很好吃
+			    </div>
+			</div>
+			<div class="my_item_opt">
+				<a id="bianji2"  onclick="showNum(1)" href="">编辑</a>
+			</div>
+			<div id="my_item_price2" class="my_item_price">
+				<div id="">
+					¥<div id="price2" style=" display:inline;">36.8</div>
+				</div>
+				<div id="">
+					x<div id="amount2" style=" display:inline;">2</div>
+				</div>
+		    </div>		    
+        </div>
+        <div id="selectNum2" style=" display:none; z-index:-1;width:65%; height:100px; margin-left:35%;">
+            <div style=" width:100%; height:50px;">
+                <div style="height:50px; background-color:#f8f8f8; display:inline;">
+                	<input id="subdece1" type="text" onClick="subduce(1)" value="-" readonly="readonly" style="height:50px; width:31%; text-align:center; margin:0px; border:0px;"/>
+                </div>
+                <div style="height:50px; background-color:#f8f8f8; display:inline;">
+                	<input id="GoogNum1" type="text" value="1" style="height:50px; width:31%; text-align:center; margin:0px;"/>
+                </div>
+                <div style="height:50px; background-color:#f8f8f8; display:inline;">
+                	<input id="add1" type="text" onClick="addNum(1)" value="+" readonly="readonly" style="height:50px; width:31%; text-align:center; margin:0px; border:0px;"/>
+                </div>
+              
+            </div>
+		</div>
+		<div id="good3" class="my_item">
+			<div class="my_item_ico">
+				<img id="item_img3" src="../../../img/circle.png" onClick="signalSelect('item_img3')"/>
+			</div>
+			<div class="my_item_goodico">
+				<img class="item_img" src="../../../img/food.jpg"/>
+			</div>
+            <div id="content3">
+			    <div id="my_item_gooddesc3" class="my_item_gooddesc">
+				        哈哈今天天气不错这个属股很好吃属股很好吃属股很好吃
+			    </div>
+			</div>
+			<div class="my_item_opt">
+				   <a id="bianji3"  onclick="showNum(1)" href="">编辑</a>
+			</div>
+			<div id="my_item_price3" class="my_item_price">
+				<div id="">
+					¥<div id="price3" style=" display:inline;">36.8</div>
+				</div>
+				<div id="">
+					x<div id="amount3" style=" display:inline;">2</div>
+				</div>
+		    </div>		    
+        </div>
+        <div id="selectNum3" style=" display:none; z-index:-1;width:65%; height:100px; margin-left:35%;">
+            <div style=" width:100%; height:50px;">
+                <div style="height:50px; background-color:#f8f8f8; display:inline;">
+                	<input id="subdece1" type="text" onClick="subduce(1)" value="-" readonly="readonly" style="height:50px; width:31%; text-align:center; margin:0px; border:0px;"/>
+                </div>
+                <div style="height:50px; background-color:#f8f8f8; display:inline;">
+                	<input id="GoogNum1" type="text" value="1" style="height:50px; width:31%; text-align:center; margin:0px;"/>
+                </div>
+                <div style="height:50px; background-color:#f8f8f8; display:inline;">
+                	<input id="add1" type="text" onClick="addNum(1)" value="+" readonly="readonly" style="height:50px; width:31%; text-align:center; margin:0px; border:0px;"/>
+                </div>
+               <div style="">
+                    <div style=" width:50%;height:50px;display:inline;">
+                    	<a href="javascript:;" class="weui_btn weui_btn_primary" onClick="completeNum(1)" style="width:50%; float:left; height:50px;">
+                    		完成
+                    	</a>
+                    </div>
+                    <div style=" width:50%;height:50px; display:inline;">
+                    	<a href="javascript:;" class="weui_btn weui_btn_warn" style=" width:50%; height:50px; float:right;">
+                    		删除
+                   		</a>
+                   </div>
+                </div>
+            </div>
+		</div>
+		<div class="my_bottom">	
+			<table class="my_pay">
+				<tr>
+					<td id="AllSelectImg" class="my_td1">
+						<img id="all_select" src="../../../img/circle.png" onClick="AllSelect()"/>
+						<span id="all_select_word">全选</span>
+					</td>
+					<td class="my_td2">
+						合计:
+						<span >¥<div id="sumMoney" style=" display:inline;">0</div></span>
+					</td>
+					<td class="my_td3 ">
+						<div class="weui_btn weui_btn_warn" style="height: 35px;width: 90px;border-radius:3px;font-size: 15px ;">
+							结算(<span id="jiesuan_num">0</span>)
+						</div>
+					</td>
+				</tr>
+			</table>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="../home.html" id="home">
+				<div class="footericon" style="height: 20px;"><img id="img1" src="../../../img/light1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">慧脱贫</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="#tabbar-with-contact"id="me" >
+				<div class="footericon"><img id="img2" src="../../../img/me1.png" class="footer"/></div>
+				<div class="mui-tab-label" style="font-size: 11px;margin-top: 5px;height: 10px;line-height: 8px;">我</div>
+			</a>
+		</nav>
+
+
+
+		</div>
+		
+			<script src="../../../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		function onchange(){
+			document.getElementById("img1").src="../../../img/light.png";
+			document.getElementById("img2").src="../../../img/me.png";
+		}
+		function onchange1(){
+			document.getElementById("img1").src="../../../img/light1.png";
+			document.getElementById("img2").src="../../../img/me1.png";
+		}
+		document.getElementById("home").addEventListener("click",onchange);
+		document.getElementById("me").addEventListener("click",onchange1);
+	</script>
+			
+	</body>
+</html>

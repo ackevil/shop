@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的获助</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../../css/mui.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../../css/app.css" />	
+		<script type="text/javascript"src="../../../js/footer.js"></script>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider" style="background-color: white;border-bottom: 1px solid gainsboro;">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" id="item1">
+						获助的物品
+						<li id="slider_left" class="mui-slider-progress-bar mui-col-xs-4" style="width: 120px;background-color: #fc5959;margin: 0 auto;opacity: 1;"></li>
+					</a>
+					<a class="mui-control-item" id="item2">
+						获助的金额
+						<li id="slider_right" class="mui-slider-progress-bar mui-col-xs-4" style="width: 120px;background-color: #fc5959;margin: 0 auto;opacity: 0;"></li>
+					</a>
+				</div>	
+			</div>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script type="text/javascript">
+		document.getElementById("item1").addEventListener("click",onclick);
+		document.getElementById("item2").addEventListener("click",onclick1);
+		//启用双击监听
+		mui.init({
+			gestureConfig:{
+				doubletap:true
+			},
+			
+			subpages:[{
+				url:'goods_sub.html',
+				id:'wodejuanzhu_sub.html',
+				styles:{
+					top: '40px',
+					bottom: '0px',
+				}
+			}]
+		});
+		
+	</script>
+
+	</body>
+
+</html>

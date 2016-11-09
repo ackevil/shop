@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+.center_ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	}
+.li_content{
+	padding:2vh 2vw 1vh 2vw;
+	}
+.center_li{
+	width:100%;
+	}
+.li_content img{
+max-height:100%;
+max-width:100%;
+	}
+.center_li h1{
+    font-family:"黑体";
+	margin:1vh 0px 1vh 0px;
+	font-size:3vw;
+	padding-left:2vw;
+	}
+.center_li table{
+	width:100%;
+	font-family:"黑体";
+	font-size:3vw;
+	}
+.li_table_tr{
+	color:#fc5959;
+	}
+.border_td{
+	width:33.3%;
+	border-right-width:1px;
+	border-right-style:solid;
+	border-right-color:#cfcfcf;
+	border-collapse:collapse;
+	}
+.border_text_td1{
+padding-left:2vw;
+	}
+.border_text_td2{
+padding-left:4vw;
+	}
+.border_text_td3{
+padding-left:7vw;
+	}
+.center_li_img{
+	width:100%;
+	max-height:40%;
+	}

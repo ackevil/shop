@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		<link href="../css/mui.picker.css" rel="stylesheet" />
+		<link href="../css/mui.poppicker.css" rel="stylesheet" />
+		<!--<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />-->
+		<style>
+			.mui-poppicker-header{
+				padding: 6px;
+			}
+			.mui-poppicker-header .mui-btn{
+				padding: 5px 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		
+			
+		<button id='showCityPicker' class="mui-btn mui-btn-block" type='button'>二级联动示例 ...</button>
+		<div id='cityResult'></div>
+				
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/picker.js"></script>
+		<script src="../js/poppicker.js"></script>
+		<script src="../js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					var cityPicker = new $.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showCityPickerButton = doc.getElementById('showCityPicker');
+					var cityResult = doc.getElementById('cityResult');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							cityResult.innerText = "你选择的城市是:" + items[0].text + " " + items[1].text;
+						});
+					}, false);		
+				});
+			})(mui, document);
+		</script>
+	</body>
+
+</html>

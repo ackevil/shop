@@ -1,0 +1,36 @@
+{
+	"jsp/home.html": {
+		"resources": [
+			"img/me.png",
+			"img/dishuizhien.png",
+			"css/footer.css",
+			"img/light.png",
+			"img/Main_page.jpg",
+			"img/zhongdajiuzhu_log.png",
+			"img/aigou_log.png",
+			"js/mui.min.js",
+			"css/app.css",
+			"css/mui.min.css",
+			"img/zhongchoukongjian.png",
+			"img/yijiuyouai_logo.png",
+			"img/aixinfengcai_log.png",
+			"js/footer.js",
+			"jsp/yiJiuYouAi/yijiuyouai.html"
+		],
+		"refer": [
+			"jsp/yiJiuYouAi/yijiuyouai.html"
+		]
+	},
+	"jsp/yiJiuYouAi/yijiuyouai.html": {
+		"resources": [
+			"img/yijiuyouai1.jpg",
+			"img/jiantou.png",
+			"js/jquery-1.11.1.js",
+			"css/mui1.css",
+			"jsp/home.html"
+		],
+		"refer": [
+			"jsp/home.html"
+		]
+	}
+}

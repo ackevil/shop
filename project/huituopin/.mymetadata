@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="huituopin"
+  id="myeclipse.1460609533233"
+  context-root="/huituopin"
+  j2ee-spec="6.0"
+  archive="huituopin.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

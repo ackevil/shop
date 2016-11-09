@@ -1,0 +1,146 @@
+*{
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+body{
+	font-family: "黑体";
+	font-size: 14px;
+	color: #9B9B9B;
+}
+a:active{
+	color: #00BCE4;
+}
+a:visited{
+	color: #9B9B9B;
+}
+
+.box{
+	height: 80px;
+	width: 100%;
+	background-color: white;
+	
+}
+.top{
+	margin: auto;
+	width: 1200px;
+	background-color: white;
+	height: 80px;
+}
+.top_1{
+	height: 80px;
+	float: left;
+}
+.top_2{
+	width: 500px;
+	height: 80px;
+	float: left;
+	font-size: 20px;
+	color: #9B9B9B;
+	text-align: center;
+}
+.top_2 ul li{
+	text-align: center;
+	float: left;
+	list-style-type: none;
+	width: 100px;
+	margin-top: 28px;
+}
+.top_3{
+	width: 400px;
+	height: 80px;
+	float: right;
+	font-size: 20px;
+	color: #00BCE4;
+}
+.top_3 .user{
+	float: left;
+	display: block;
+	width: 150px;
+	margin-top: 28px;
+	color: #00BCE4;
+}
+.top_3 .exitButton{
+	width: 100px;
+	height: 40px;
+	float: left;
+	margin-top: 18px;
+	margin-left: 25px;
+	font-size: 20px;
+	color: #00BCE4;
+	background-color: white;
+	border: 1px solid #D0D0D0;
+	border-radius: 25px 25px 25px 25px;
+}
+
+.top_3 .loginButton{
+	width: 100px;
+	height: 40px;
+	float: left;
+	margin-top: 18px;
+	margin-left: 25px;
+	font-size: 20px;
+	color: #00BCE4;
+	background-color: white;
+	border: 1px solid #D0D0D0;
+	border-radius: 25px 25px 25px 25px;
+}
+.middle{
+	width: 100%;
+	border-top:1px solid #D0D0D0 ;
+	border-bottom:1px solid #D0D0D0 ;
+	height: 640px;
+	background-color: rgb(239, 239, 244);
+}
+.main{
+	margin: auto;
+	width: 1200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-image: url(../images/Main_page.jpg);
+	background-repeat:no-repeat ;
+	background-size:cover;
+	height: 600px;
+}
+.middle_box{
+	width: 1200px;
+	margin: auto;
+}
+.middle_box .middle_box-top{
+	height: 100px;
+}
+.middle_box .middle_box-top .juanzhuButton{
+	width: 100px;
+	height: 40px;
+	float: right;
+	border-radius: 25px 25px 25px 25px;
+	border: 0px;
+	margin-top: 30px;
+	background-color: #00BCE4;
+	color: white;
+}
+.middle_box .showarea{
+	width: 1350px;
+	height: 1000px;
+	
+	
+}
+.footer{
+	width: 100%;
+	height: 100px;
+	font-size: 20px;
+	background-color: white;
+}
+.footer-box{
+	margin: auto;
+	width: 1200px;
+	height: 100px;
+	font-size: 20px;
+}
+.footer-box .declare{
+	width: 800px;
+	padding-top: 30px;
+	font-size:16px;
+	float: left;
+	display: block;
+}

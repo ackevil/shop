@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../../../js/mui.min.js"></script>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../../css/mui1.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../../css/app.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/FaBuJuanZeng.css" />
+		<style>
+			.login-lastline {
+				height: 70px;
+				width: 100%;
+				background-color: #efeff4;
+				padding-top: 12px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			
+			.login-button {
+				width: 100%;
+				height: 43px;
+				outline: none;
+				font-size: 14px;
+				color: white;
+				border-color: transparent;
+				background-color: #fc5959;
+			}
+			.mui-input-group .mui-input-row:after{
+				
+			}
+			.mui-input-group:after{
+				background-color: transparent;
+			}
+			button{
+				padding: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<form class="mui-input-group">
+				<div class="mui-input-row" style="height: 45px;font-size:15px ;color: #4A4A4A;padding-top: 5px;">
+					<label style="width: 28%;">产品名称</label>
+					<input style="width: 72%;margin-top: -2px;font-size: 15px;color: black;" type="text" placeholder="">
+				</div>
+				<div class="mui-input-row" style="height: 45px;font-size:15px ;color: #4A4A4A;padding-top: 5px;">
+					<label class="mui-navigate-right" style="width: 28%;">所属类别</label>
+							<div style="width:72%;height: 100%;float: left;">
+								<select style="padding-left:0px;font-size: 15px;height: 45px;margin-top: -5px;">
+									<option value="item-1">上衣</option>
+									<option value="item-2">item-2</option>
+									<option value="item-3">item-3</option>
+									<option value="item-4">item-4</option>
+									<option value="item-5">item-5</option>
+								</select>
+							</div>					
+				</div>
+				<div class="mui-input-row" style="height: 45px;font-size:15px ;color: #4A4A4A;padding-top: 5px;">
+					<label class="mui-navigate-right" style="width: 28%;">性别</label>
+						<div style="width:72%;height: 100%;float: left;">
+							<select style="padding-left:0px;font-size: 15px;height: 45px;margin-top: -5px;">
+								<option value="item-1">男</option>
+								<option value="item-2">女</option>
+							</select>
+						</div>					
+				</div>
+				<div class="mui-input-row" style="height: 45px;font-size:15px ;color: #4A4A4A;padding-top: 5px;">
+					<label class="mui-navigate-right" style="width: 28%;">年龄</label>
+							<div style="width:72%;height: 100%;float: left;">
+								<select style="padding-left:0px;font-size: 15px;height: 45px;margin-top: -5px;">
+									<option value="item-1">少年</option>
+									<option value="item-2">item-2</option>
+									<option value="item-3">item-3</option>
+									<option value="item-4">item-4</option>
+									<option value="item-5">item-5</option>
+								</select>
+							</div>					
+				</div>
+			
+			<div style="height: 10px;background-color: #EFEFF4;"></div>
+			
+			<div class="product-detail">
+				<div class="product-detail-title">
+					<span>捐赠寄语</span>
+				</div>
+				<div class=" product-detail-content" style="height: 100px;">
+					<textarea id="textarea" rows="" 
+						placeholder="例：小小心意，希望能帮助到他人，物品有限，爱心无限。"></textarea>
+				</div>
+				<div class="product-detail-img">
+					<button><img src="../../../img/addImg.jpg"/></button>
+					<button><img src="../../../img/addImg.jpg"/></button>
+					<button><img src="../../../img/addImg.jpg"/></button>
+					<button><img src="../../../img/addImg.jpg"/></button>
+				</div>
+			</div>
+			
+			<div class="login-lastline">
+				<input type="submit" class="login-button" value="确定" />
+			</div>
+		</div>
+	</body>
+
+</html>

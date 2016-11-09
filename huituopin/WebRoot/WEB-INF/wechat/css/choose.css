@@ -1,0 +1,56 @@
+html
+{
+    font-family: "黑体";
+	height: 100%;
+	margin: 0;
+    -webkit-text-size-adjust: 100%;
+}
+
+body
+{
+	background-color: #efeff4;
+	height: 100%;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+}
+.choose-header{
+	width:100%;
+	height: 17%;
+	margin: 0;
+}
+.choose-text{
+	margin: 0;
+	padding: 13%;
+	text-align: center;
+	font-size: 13px;
+	color:black;
+	position:relative
+}
+.choose-content{
+	width:100%;
+	height: 50%;
+}
+.choose-section{
+	width:100%;
+	height: 50%;
+	margin: 0;
+}
+.choose-id{
+	width:80%;
+	height: 100%;
+	
+}
+.choose-foot{
+	width:100%;
+	height: 45px;
+	margin: 0;
+	position:absolute;
+	bottom:0px;
+}
+.choose-button{
+	width:100%;
+	height: 100%;
+	font-size: 120%;
+	color: white;
+	background-color:#00bce4;
+}

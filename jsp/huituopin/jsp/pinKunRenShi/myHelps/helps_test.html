@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../../css/mui.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../../css/app.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/footer.css"/>
+		<style type="text/css">
+			.mui-control-content {
+				background-color: white;
+				min-height: 550px;
+				
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+		</style>
+		<script type="text/javascript">
+			var height=window.screen.height;
+	
+			//document.getElementById("item1mobile").style.minHeight="height";
+			
+		</script>
+		
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider" style="background-color: white;">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+						获助的物品
+					</a>
+					<a class="mui-control-item" href="#item3mobile">
+						获助的金额
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div style="height: 10px;background-color: #efeff4;"></div>
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active" style="background-color: #efeff4;border: 0;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									
+									<li class="mui-table-view-cell" style="height: 85px;padding-top: 16px;border-bottom: 1px solid gainsboro;border-top: 1px solid gainsboro">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+										<div class="mui-media-body" style="">
+											<div style="float: left;height: 60px;width: 60px;">
+												牛仔裤
+												<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+												数量：1<br />
+												2016-04-27
+											</div>								
+										<button style="float: right;height: 30px;width:45px;margin-top: 12px;">删除</button>
+										</div>									
+									</li>
+									<div style="height: 10px;background-color: #efeff4;"></div>
+									<li class="mui-table-view-cell" style="height: 85px;padding-top: 16px;border-bottom: 1px solid gainsboro;border-top: 1px solid gainsboro">
+										<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../../img/yijiuyouai1.jpg" style="height: 55px;max-width: 55px;">
+										<div class="mui-media-body" style="">
+											<div style="float: left;height: 60px;width: 60px;">
+												牛仔裤
+												<p class='mui-ellipsis'style="font-size: 12px;line-height: 1.5em;">
+												数量：1<br />
+												2016-04-27
+											</div>								
+										<button style="float: right;height: 30px;width:45px;margin-top: 12px;">删除</button>
+										</div>									
+									</li>
+								</ul>
+								<div style="height: 10px;background-color: #efeff4;"></div>
+								
+									
+								
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content"style="background-color: #efeff4;border: 0;">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content"style="background-color: #efeff4;border: 0;">
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar" id="home">
+				<div class="icondiv"><img id="img1" src="../../../img/light.png" class="footer"/></div>
+				<span class="mui-tab-label" style="font-size: 12px;">慧脱贫</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact"id="me">
+				<div class="icondiv"><img id="img2" src="../../../img/me.png" class="footer"/></div>
+				<span class="mui-tab-label" style="font-size: 12px;">我</span>
+			</a>
+		</nav>
+		<script src="../../../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell"><img class="mui-media-object mui-pull-left head-img" id="head-img" src="images/logo.png" style="height: 100px;max-width: 140px;"><div class="mui-media-body" style="font-size: 12px;">灵魂洗涤 淳净未来——为菩提增长小学的孩子建一间澡堂<br/><span style="color:#fc5959">已捐金额：50元</span><br/>2016-04-10</li></ul>';
+				var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell"><img class="mui-media-object mui-pull-left head-img" id="head-img" src="images/logo.png" style="height: 100px;max-width: 140px;"><div class="mui-media-body" style="font-size: 12px;">灵魂洗涤 淳净未来——为菩提增长小学的孩子建一间澡堂<br/><span style="color:#fc5959">已捐金额：50元</span><br/>2016-04-10</li></ul>';
+				var item2 = document.getElementById('item2mobile');
+				var item3 = document.getElementById('item3mobile');
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					if (e.detail.slideNumber === 1) {
+						if (item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2;
+							}, 500);
+						}
+					} else if (e.detail.slideNumber === 2) {
+						if (item3.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item3.querySelector('.mui-scroll').innerHTML = html3;
+							}, 500);
+						}
+					}
+				});
+				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+						//force repaint
+						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+					}
+				});
+			})(mui);
+		</script>
+
+	</body>
+
+</html>
